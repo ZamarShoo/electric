@@ -7,6 +7,10 @@ nav {
     margin-top: 20px;
     width: 100%;
     height: 110px;
+
+    section {
+        width: 1210px;
+    }
 }
 
 .navigation__up {
@@ -65,6 +69,7 @@ nav {
     padding: 1em 2em;
     font-size: 12px;
     letter-spacing: 0.06em;
+    cursor: pointer;
 
     &:hover {
         background-color: #00489D;
@@ -79,7 +84,7 @@ nav {
     margin-top: -10px;
 }
 
-.navigation__down {
+menu {
     display: flex;
 
     ul {
@@ -114,7 +119,7 @@ nav {
     }
 }
 
-.navigation__down ul li ul {
+menu ul li ul {
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -124,14 +129,14 @@ nav {
     display: none;
   }
    
-  .navigation__down ul li:hover > ul,
-  .navigation__down ul li ul:hover {
+  menu ul li:hover > ul,
+  menu ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
   }
    
-  .navigation__down ul li ul li {
+  menu ul li ul li {
     clear: both;
     width: 400px;
 
@@ -152,8 +157,38 @@ nav {
     }
   }
 
-  .navigation__down ul li:hover a > img {
+  menu ul li:hover a > img {
       transform: rotate(180deg);
+  }
+
+  .fixed {
+      position: fixed;
+      margin: 0;
+      z-index: 15;
+      height: 58px;
+      width: 100vw;
+      background: #001F44;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+      .navigation__up {
+          height: 1px;
+          opacity: 0;
+          display: none;
+      }
+
+      hr {
+          margin: 0;
+          display: none;
+      }
+
+      menu {
+          margin-top: 12px;
+
+          ul {
+              margin-top: 5px;
+          }
+      }
+
   }
 
 //---------------------------------------------Header
@@ -563,6 +598,7 @@ input[type="submit"] {
 footer {
     background-color: #001F44;
     padding-top: 70px;
+    padding-bottom: 30px;
     margin-top: 130px;
 }
 
@@ -630,12 +666,123 @@ footer {
 }
 
 .footer-menu {
+    display: flex;
 
     ul {
         display: flex;
+        margin-right: 0;
+        margin-left: auto;
 
         li {
             margin-left: 40px;
+            opacity: 0.8;
+        }
+
+        li:hover {
+            opacity: 1;
         }
     }
+}
+
+.f__hr {
+    margin: 50px 0 30px;
+}
+
+.footer__down {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-size: 12px;
+        line-height: 100%;
+        color: #FFFFFF;
+        opacity: 0.3;
+    }
+}
+
+.pol {
+    a {
+        font-size: 12px;
+        line-height: 100%;
+        color: #FFFFFF;
+        opacity: 0.3;
+    }
+
+    a:hover {
+        opacity: 0.8;
+    }
+    a:first-child {
+        margin-right: 40px;
+
+    }
+}
+
+//---------------------------------------------Popup
+.ppp_gbg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: 50;
+    display: none;
+}
+
+.ppp__window {
+    width: 730px;
+    height: 420px;
+    background-color: #001F44;
+    position: fixed;
+    z-index: 51;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -210px;
+    margin-left: -365px;
+    opacity: 1;
+    display: none;
+}
+
+.ppp__form {
+    margin: 30px;
+    border: 1px solid white;
+    height: 360px;
+
+    h3 {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+        line-height: 125%;
+        text-align: center;
+        color: #FFFFFF;
+        width: 455px;
+        margin-top: 40px;
+        font-weight: normal;
+    }
+
+    .policy {
+        text-align: center;
+        margin: 10px auto 0;
+    }
+
+    .btn__submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.form__pp {
+    display: flex;
+    width: 590px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.ppp__close {
+    position: absolute;
+    right: 0;
+    margin-top: -25px;
+    cursor: pointer;
 }
