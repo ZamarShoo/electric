@@ -16,7 +16,7 @@
     <div class="ppp__window">
         <img class="ppp__close" src="./img/close.svg" alt="">
         <div class="ppp__form" id="popup_open">
-            <h3>Заполните форму и мы с вами свяжмся</h3>
+            <h3>Заполните форму и мы с вами свяжемся</h3>
             <form action="GET" class="form__ppp">
                 <div class="form__pp">
                     <label>
@@ -56,7 +56,7 @@
                     <a class="phone__nav show_popup" rel="popup_open">ОБРАТНЫЙ ЗВОНОК</a>
                 </div>
                 <hr>
-                <menu>
+                <div class="menu">
                     <a href="#" class="logo"><h2>Electro</h2></a>
                     <ul>
                         <li><a class="navi--a" href="#">Услуги<img src="./img/arrow-down.svg" alt=""></a>
@@ -73,10 +73,28 @@
                         <li><a class="navi--a" href="#">Статьи</a></li>
                         <li><a class="navi--a" href="#">Контакты</a></li>
                     </ul>
-                </menu>
+                </div>
             </section>
             </nav>
         
+
+
+<!------------Mobile Navigation------------>
+    <menu class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <div class="logo"><h2><a href="#">Electro</a></h2></div>
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>  <ul class="menu__box">
+          <li><a class="menu__item" href="#">Услуги</a></li>
+          <li><a class="menu__item" href="#">О Компании</a></li>
+          <li><a class="menu__item" href="#">Наши работы</a></li>
+          <li><a class="menu__item" href="#">Статьи</a></li>
+          <li><a class="menu__item" href="#">Контакты</a></li>
+        </ul>
+    </menu>
+
+
 
 <!------------Header------------>
     <header>
@@ -87,7 +105,7 @@
                 <p>Давно выяснено, что при оценке дизайна и композиции
                      читаемый текст мешает сосредоточиться.
                      Lorem Ipsum используют потому, что тот обеспечивает</p>
-                    <a class="btn__popup" href="#">ОФОРМИТЬ ЗАКАЗ <img src="./img/arrow-right.svg" alt=""></a>
+                    <a class="btn__str" href="#">ОФОРМИТЬ ЗАКАЗ <img src="./img/arrow-right.svg" alt=""></a>
             </div>
         </section>
     </header>
@@ -141,14 +159,14 @@
             </a>
             <!--end one-->
         </div>
-        <a class="btn__popup position__btn" href="#">ВСЕ УСЛУГИ<img src="./img/arrow-right.svg" alt=""></a>
+        <a class="btn__str position__btn" href="#">ВСЕ УСЛУГИ<img src="./img/arrow-right.svg" alt=""></a>
     </section>
 
 
 
 <!------------Third slide with info------------>    
-    <img class="kaska" src="./img/2fd6e6cdcd562cc9a59415f884cc2761.jpeg" alt="">
     <section>
+        <img class="kaska" src="./img/2fd6e6cdcd562cc9a59415f884cc2761.jpeg" alt="">
         <div class="info">
             <h3>Деликатный электромонтаж в вашей квартире: недорого и с гарантией!</h3>
             <p>Мы - сплоченный коллектив из четырех электромонтажников с большим опытом. 
@@ -158,7 +176,7 @@
                 а когда человек занимается тем, что он действительно любит, 
                 получается по-настоящему хорошо!
             </p>
-            <a class="btn__popup btn--blue" href="#">ЧИТАТЬ ПОЛНОСТЬЮ <img src="./img/arrow-blue.svg" alt=""></a>
+            <a class="btn__str btn--blue" href="#">ЧИТАТЬ ПОЛНОСТЬЮ <img src="./img/arrow-blue.svg" alt=""></a>
         </div>
     </section>
 
@@ -270,7 +288,7 @@
         </a>
         <!--end one-->
     </div>
-    <a class="btn__popup position__btn" href="#">ВСЕ РАБОТЫ<img src="./img/arrow-right.svg" alt=""></a>
+    <a class="btn__str position__btn" href="#">ВСЕ РАБОТЫ<img src="./img/arrow-right.svg" alt=""></a>
 </section>
 
 
@@ -300,7 +318,7 @@
         </div>
         <!--end one-->
         <!--one-->
-        <div class="post__card">
+        <div class="post__card hiiderm">
             <div class="post__text">
                 <p class="data">02.11.2019</p>
                 <p class="text">Как выбрать материалы для электромонтажа</p>
@@ -310,17 +328,18 @@
         </div>
         <!--end one-->
     </div>
-    <a class="btn__popup post__btn" href="#">ВСЕ СТАТЬИ<img src="./img/arrow-right.svg" alt=""></a>
+    <a class="btn__str post__btn" href="#">ВСЕ СТАТЬИ<img src="./img/arrow-right.svg" alt=""></a>
 </section>
 
 
 <!------------Dark form------------>
-<section>
+<section class="dark__form__section">
     <div class="dark-form">
         <div class="blue--bg"></div>
         <div class="form-dark__up">
             <h3>Оставьте заявку прямо сейчас, и наш специалист свяжется с Вами для уточнения деталей</h3>
             <form action="GET" class="form__dark">
+                <div class="label__form">
                 <label>
                     <p>Ваше имя:</p>
                     <input type="text" placeholder="Например: Иван" required>
@@ -329,6 +348,7 @@
                     <p>Ваш номер:</p>
                     <input id="number" type="text" placeholder="+7(___)-___-__-__" required>
                 </label>
+                </div>
                 <label>
                     <div class="btn__popup btn__submit">ОФОРМИТЬ ЗАКАЗ<img src="./img/arrow-right.svg" alt=""></div>
                     <input type="submit" class="btn__popup" href="#">
