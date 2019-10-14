@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body, * {
     margin: 0;
     padding: 0;
@@ -81,22 +85,23 @@ h1 {
 }
 
 h2 {
-    font-family: 'Proxima Nova Extra Bold';
+    font-family: 'Gilroy Bold';
     font-weight: normal;
+    font-size: 50px;
+    line-height: 130%;
+    color: #001535;
 }
 
 h3 {
     font-family: 'Proxima Nova Extra Bold';
+    font-size: 18px;
+    line-height: 150%;
 }
 
 p {
     font-family: 'Proxima Nova Regular';
     color: #88ABD4;
     opacity: 0.78;
-}
-
-span {
-
 }
 
 a {
