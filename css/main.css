@@ -36,6 +36,14 @@ li {
 }
 
 @font-face {
+  font-family: 'Gilroy Extra Bold';
+  src: url("../fonts/Gilroy-ExtraBold.eot");
+  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Gilroy Bold';
   src: url("../fonts/Gilroy-Bold.eot");
   src: url("../fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype");
@@ -63,6 +71,14 @@ li {
   font-family: 'Proxima Nova Extra Bold';
   src: url("../fonts/ProximaNova-Extrabld.eot");
   src: url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -275,6 +291,7 @@ nav section {
   width: 100vw;
   background: #001F44;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 0;
 }
 
 .fixed .navigation__up {
@@ -1041,7 +1058,7 @@ footer {
     width: 42px;
     height: 26px;
     cursor: pointer;
-    z-index: 2001;
+    z-index: 11;
   }
   .menu__btn > span,
   .menu__btn > span::before,
@@ -1053,7 +1070,7 @@ footer {
     background-color: white;
     padding-top: 0px;
     border: none;
-    z-index: 2001;
+    z-index: 9;
   }
   .menu__btn > span::before {
     content: '';
@@ -1075,7 +1092,7 @@ footer {
     padding: 100px 0;
     list-style: none;
     background-color: #001F44;
-    z-index: 2000;
+    z-index: 8;
   }
   .menu__item {
     display: block;
@@ -1118,6 +1135,32 @@ footer {
 }
 
 @media screen and (max-width: 747px) {
+  .ppp__form h3 {
+    font-size: 24px;
+    width: 100%;
+  }
+  .ppp__window {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .ppp__close {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .ppp__form {
+    margin: 20px;
+    border: 0px solid white;
+    height: 100vh;
+    padding-top: 50px;
+  }
+  .form__pp {
+    display: block;
+    width: 280px;
+  }
   .project__card {
     width: 320px;
     height: 320px;
@@ -1309,4 +1352,220 @@ footer {
   .dark__form__section {
     padding: 0;
   }
+}
+
+.bg__nav {
+  background-color: #001535;
+  height: 160px;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.template {
+  margin-top: 70px;
+}
+
+.template h1 {
+  font-family: 'Gilroy Extra Bold';
+  font-size: 50px;
+  line-height: 130%;
+  color: #001535;
+  margin-bottom: 40px;
+}
+
+.bread {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.bread a {
+  font-size: 14px;
+  line-height: 130%;
+  color: #001535;
+  opacity: 0.4;
+}
+
+.bread p {
+  font-size: 14px;
+  line-height: 130%;
+  color: #001535;
+}
+
+.bread .ver {
+  width: 1px;
+  height: 14px;
+  background-color: #001535;
+  opacity: 0.4;
+  margin: 2px 10px 0;
+}
+
+.bg__mb__templ {
+  height: 70px;
+  background-color: #001535;
+  top: 0;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.temp__logo {
+  margin-top: -5px;
+}
+
+.temp__span {
+  top: 24px;
+  z-index: 11;
+}
+
+.cont__l-col {
+  width: 310px;
+}
+
+.c__gray {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #001535;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.c__blue {
+  font-family: 'Proxima Nova Semibold';
+  font-size: 20px;
+  line-height: 100%;
+  color: #001535;
+  margin-bottom: 40px;
+}
+
+.c__blue--mb {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 445px;
+  height: 252px;
+  border: 2px solid #001535;
+  opacity: 0.7;
+  padding: 20px 15px;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 16px;
+  line-height: 130%;
+  color: #001535;
+}
+
+textarea:hover {
+  opacity: 1;
+}
+
+.formcontact {
+  display: flex;
+}
+
+#contform input[type="text"] {
+  width: 255px;
+  height: 50px;
+  border: 2px solid #001535;
+  padding: 20px 15px;
+  font-family: 'Proxima Nova Semibold';
+  font-size: 16px;
+  line-height: 130%;
+  color: #001535;
+  opacity: 0.7;
+  margin-bottom: 25px;
+  margin-right: 30px;
+}
+
+#contform input[type="text"]:hover {
+  opacity: 1;
+}
+
+#contform p {
+  font-size: 16px;
+  line-height: 130%;
+  color: #001535;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.formin {
+  display: flex;
+}
+
+.btnfor {
+  width: 255px;
+  padding: 1em 4.7em;
+  margin-right: 30px;
+}
+
+.cont__r-col {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.ftr {
+  margin-top: -3px;
+}
+
+.frmbtn {
+  display: flex;
+}
+
+.for-img {
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.img__full {
+  width: 100vw;
+  margin-top: -500px;
+}
+
+#text h2 {
+  font-family: 'Proxima Nova Bold';
+  font-size: 40px;
+  line-height: 130%;
+  color: #001535;
+}
+
+#text h3 {
+  font-family: 'Proxima Nova Bold';
+  font-size: 25px;
+  line-height: 130%;
+  color: #001535;
+}
+
+#text h4 {
+  font-family: 'Proxima Nova Bold';
+  font-size: 20px;
+  line-height: 130%;
+  color: #001535;
+}
+
+#text h5 {
+  font-family: 'Proxima Nova Bold';
+  font-size: 15px;
+  line-height: 150%;
+  color: #001535;
+  opacity: 0.8;
+}
+
+#text p {
+  font-family: 'Proxima Nova Regular';
+  font-size: 15px;
+  line-height: 150%;
+  color: #001535;
+  opacity: 0.8;
 }
