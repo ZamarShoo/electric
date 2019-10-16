@@ -3,57 +3,108 @@
 @import './mobile.scss';
 @import './card-page.scss';
 @import './contacts.scss';
+@import './about.scss';
 
-.for-img {
-    height: 400px;
-    overflow: hidden;
+.sec__project {
+    display: flex;
+}
+
+.l__project {
+    margin-right: 35px;
     margin-bottom: 50px;
+
+    img {
+        width: 540px;
+    }
 }
 
-.img__full {
-    width: 100vw;
-    margin-top: -500px;
-}
+.r__project #text {
+    width: 530px;
 
-#text {
     h2 {
-        font-family: 'Proxima Nova Bold';
-        font-size: 40px;
-        line-height: 130%;
-        color: #001535;
+        margin-top: 0;
+    }
+}
+
+.project__photo img {
+    width: 350px;
+    height: 246px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:1150px) {
+    .sec__project {
+        display: block;
     }
 
-    h3 {
-        font-family: 'Proxima Nova Bold';
-        font-size: 25px;
-        line-height: 130%;
-        color: #001535;
+    .l__project {
+        height: 400px;
+        overflow: hidden;
+        margin-right: 0;
+
+        img {
+            width: 100vw;
+        }
     }
 
-    h4 {
-        font-family: 'Proxima Nova Bold';
-        font-size: 20px;
-        line-height: 130%;
-        color: #001535;
+    .r__project #text {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    
+    .r__project #text {
+        width: 100%;
     }
 
-    h5 {
-        font-family: 'Proxima Nova Bold';
-        font-size: 15px;
+    .project__photo img {
+        width: 280px;
+        height: 246px;
+        margin-top: 30px;
+    }
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+}
+
+.navbar ul li {
+    width: 255px;
+    min-height: 70px;
+    background-color: #001F44;
+    cursor: pointer;
+    margin-bottom: 1px;
+    padding: 14px 30px;
+
+    a {
+        font-family: 'Proxima Nova Semibold';
+        font-size: 14px;
         line-height: 150%;
-        color: #001535;
-        opacity: 0.8;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
     }
 
-    p {
-        font-family: 'Proxima Nova Regular';
-        font-size: 15px;
-        line-height: 150%;
-        color: #001535;
-        opacity: 0.8;
+    &:hover {
+        background-color: #00489D;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar {
+        display: none;
+        opacity: 0;
+        width: 1;
+        height: 1;
     }
 
-    ul li {
-        
+}
+
+@media screen and (max-width: 500px) {
+    .template h1 {
+        font-size: 30px;
     }
 }
