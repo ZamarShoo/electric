@@ -159,6 +159,127 @@
                         <li><h5>Заголовок h5</h5></li>
                     </ul>
             </section>
+
+
+
+
+<!------------Calculator #2------------>
+    <section>
+        <div id="calculator">
+            <div class="calculator__n2">
+                <div class="calc__n2--head">
+                    <h2>Рассчитайте стоимость переноса</h2>
+                    <div class="head">
+                        <h3>Наименования работ</h3>
+                        <h3>Кол-во шт</h3>
+                    </div>
+                </div>
+                <div class="calc__n2--body">
+                    <div class="body__calc--elem">
+                        <p>Высверливание отверстия в стене под подрозетник в бетоне</p>
+                        <label>
+                            <input id="inp1" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('1', 0, 350)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Высверливание отверстия в стене под подрозетник в кирпиче</p>
+                        <label>
+                            <input id="inp2" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('2', 1, 250)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Высверливание отверстия в стене под подрозетник в пеноблоке</p>
+                        <label>
+                            <input id="inp3" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('3', 2, 180)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Штробление стены в бетоне<br>(Глубина до 20 мм)</p>
+                        <label>
+                            <input id="inp4" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('4', 3, 350)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Штробление стены в кирпиче<br>(Глубина до 20 мм)</p>
+                        <label>
+                            <input id="inp5" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('5', 4, 250)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Штробление стены в пеноблоке<br>(Глубина до 20 мм)</p>
+                        <label>
+                            <input id="inp6" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('6', 5, 180)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Прокладка кабеля в стене / потолке без гофры</p>
+                        <label>
+                            <input id="inp7" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('7', 6, 80)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Прокладка кабеля в стене /потолке в гофре</p>
+                        <label>
+                            <input id="inp8" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('8', 7, 100)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Установка подрозетника</p>
+                        <label>
+                            <input id="inp9" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('9', 8, 100)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Финишная установка розетки /выключателя</p>
+                        <label>
+                            <input id="inp10" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('10', 9, 180)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Финишная установка переключателя</p>
+                        <label>
+                            <input id="inp11" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('11', 10, 220)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Штукатурка штробы</p>
+                        <label>
+                            <input id="inp12" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('12', 11, 150)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Расключение распаечных коробок наружных с установкой</p>
+                        <label>
+                            <input id="inp13" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('13', 12, 500)">
+                        </label>
+                    </div>
+                    <div class="body__calc--elem">
+                        <p>Установка дополнительного автомата</p>
+                        <label>
+                            <input id="inp14" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('14', 13, 300)">
+                        </label>
+                    </div>
+                </div>
+                <div class="calc__n2--footer">
+                    <div class="calc__footer--left">
+                        <p class="star">*Минимальный выезд 1500 руб </p>
+                        <p class="final">Итоговая стоимость</p>
+                        <div class="price__calc">
+                            <p id="value-final">63 800</p>
+                            <span> руб</span>
+                        </div>
+                    </div>
+                    <div class="calc__footer--right">
+                        <label>
+                            <div class="btn__popup btn__submit btn__calc2">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
+                            <input type="submit" class="btn__popup">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
             
         
         <!------------Dark form------------>

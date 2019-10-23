@@ -165,7 +165,7 @@
 
 
 <!------------Third slide with info------------>    
-    <section>
+    <section class="third-slide">
         <img class="kaska" src="./img/2fd6e6cdcd562cc9a59415f884cc2761.jpeg" alt="">
         <div class="info">
             <h3>Деликатный электромонтаж в вашей квартире: недорого и с гарантией!</h3>
@@ -232,6 +232,101 @@
         </div>
     </section>
 </div>
+
+
+
+<!------------Calculator One------------> 
+<section>
+    <div id="calculator1">
+        <div class="calc1__l-col">
+            <div class="l-head">
+                <p class="number__calc num__culc1">01</p>
+                <h2>Рассчитайте стоимость<br>электромонтажа</h2>
+                <p>Выберите тариф:</p>
+                <div class="tabs">
+                    <div class="tab">
+                        <input type="radio" id="tab1" name="tab-group" checked onclick="selectedRadio(0)">
+                        <label for="tab1" class="tab-title"><div class="circle"><div class="circlein"></div></div>Эконом</label> 
+                        <div class="tab-content">
+                            <ul>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="tab">
+                        <input type="radio" id="tab2" name="tab-group" onclick="selectedRadio(1)">
+                        <label for="tab2" class="tab-title"><div class="circle"><div class="circlein"></div></div>Стандарт</label> 
+                        <div class="tab-content">
+                            <ul>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" id="tab3" name="tab-group"  onclick="selectedRadio(2)">
+                        <label for="tab3" class="tab-title"><div class="circle"><div class="circlein"></div></div>Премиум</label> 
+                        <div class="tab-content">
+                            <ul>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            </ul>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="tabs-line"></div>
+        </div>
+        <div class="calc1__r-col">
+            <div class="calc1__r-elem">
+                <p class="number__calc">02</p>
+                <p>Тип стен:</p>
+                <div class="select-wrapper">
+                    <select id="select" onclick="calcOneSelect()">
+                        <option value="0">Кирпич</option>
+                        <option value="0">Пеноблок</option>
+                        <option value="1">Бетон</option>
+                    </select>
+                    <img src="./img/arrow-select.svg" alt="" class="select-arrow">
+                </div>
+                <div class="under-select">
+                    <div class="us-l">
+                        <label>
+                            <p>Метраж:</p>
+                            <input type="text" id="input1" placeholder="100м" oninput="calcOneMetr()">
+                        </label>
+                    </div>
+                    <div class="us-r">
+                        <label>
+                            <p>Кол-во розеток:</p>
+                            <input type="text" id="input2" placeholder="100" oninput="calcOneInput()">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="calc1__r-elem">
+                <p class="number__calc">03</p>
+                <p>Итоговая стоимость</p>
+                <div class="price__calc">
+                    <p id="calc-final">63 800</p>
+                    <span id="span__calc"> руб</span>
+                </div>
+                <label>
+                    <div class="btn__popup show_popup btn__submit btn__calc">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
+                    <input type="submit" class="btn__popup" href="#">
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
