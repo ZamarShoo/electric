@@ -221,7 +221,7 @@ nav section {
 #calculator .calculator__n2 {
   border: 1px solid #AEAEAE;
   margin-top: 84px;
-  min-height: 1460px;
+  min-height: 1300px;
 }
 
 #calculator .calculator__n2 h2 {
@@ -279,6 +279,7 @@ nav section {
   border: 2px solid #001535;
   padding: 15px 22px;
   color: #001535;
+  outline: none;
 }
 
 .calc__n2--footer {
@@ -753,6 +754,7 @@ label > input {
   line-height: 150%;
   color: #FFFFFF;
   padding-left: 20px;
+  outline: none;
 }
 
 label > input:hover,

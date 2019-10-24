@@ -4,7 +4,7 @@ $(function(){
 });
 
 $(function(){
-    $("#calc").mask("999", {placeholder: " "});
+  $("#numbers").mask("+7 (999) 999-99-99", {placeholder: " "});
 });
 
 //Popup
@@ -47,24 +47,27 @@ let selectType = 0;
 let calcType = 1;
 let metrType = 1;
 
+var price = document.getElementById("calc-final");
+var rub = document.getElementById("span__calc");
+
 function outputCalcOne() {
 
   let finish = (metrType * calcType);
   if (finish == 0) {
-    document.getElementById("calc-final").innerHTML = "Договорная";
-    document.getElementById("span__calc").style.display="none";
-    if (document.body.clientWidth >= 824) {
-      document.getElementById("calc-final").style.fontSize="40px";
+    price.innerHTML = "Договорная";
+    rub.style.display="none";
+    if (window.screen.availWidth >= 824) {
+      price.style.fontSize="40px";
     } else {
-      document.getElementById("calc-final").style.fontSize="30px";
+      price.style.fontSize="30px";
     }
   } else {
-    document.getElementById("calc-final").innerHTML = finish;
-    document.getElementById("span__calc").style.display="block";
-    if (document.body.clientWidth >= 824) {
-      document.getElementById("calc-final").style.fontSize="60px";
+    price.innerHTML = finish;
+    rub.style.display="block";
+    if (window.screen.availWidth >= 824) {
+      price.style.fontSize="60px";
     } else {
-      document.getElementById("calc-final").style.fontSize="40px";
+      price.style.fontSize="40px";
     }
   }
 }
@@ -102,11 +105,10 @@ function selectedRadio(numberOfRadio) {
 }
 
 //calcTwo
-let arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+let arr = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+var selectedValue = 1;
 
-function calcTwo(numberOfInput, numberInArr, valueForService) {
-  var valueOfInput = document.getElementById(`inp${numberOfInput}`).value;
-  arr[numberInArr] = valueForService * valueOfInput;
+function refreshValue() {
   let finishValue = 0;
   arr.forEach(function callback(currentValue) {
     finishValue += currentValue;
@@ -114,5 +116,36 @@ function calcTwo(numberOfInput, numberInArr, valueForService) {
   document.getElementById("value-final").innerHTML = finishValue;
 }
 
+function calcTwo(numberOfInput, numberInArr, valueForService) {
+  caclTwoSel();
+  if ((numberInArr == 0) || (numberInArr == 1)) {
+    valueForService = selectedValue;
+  }
+  var valueOfInput = document.getElementById(`inp${numberOfInput}`).value;
+  arr[numberInArr] = valueForService * valueOfInput;
+  refreshValue()
+}
 
-console.log(`${window.screen.width}`)
+function refresh() {
+  if (arr[0] != 0) {
+    var valueOfInput = document.getElementById(`inp0`).value;
+    arr[0] = selectedValue * valueOfInput;
+  }
+  if (arr[1] != 0) {
+    var valueOfInput = document.getElementById(`inp1`).value;
+    arr[1] = selectedValue * valueOfInput;
+  }
+  refreshValue()
+}
+
+function caclTwoSel() {
+  var selected = document.getElementById("selected").value
+  if (selected == 0) {
+    selectedValue = 350
+  } else if (selected == 1) {
+    selectedValue = 250
+  } else if (selected == 2) {
+    selectedValue = 180
+  }
+  refresh()
+}

@@ -168,7 +168,16 @@
         <div id="calculator">
             <div class="calculator__n2">
                 <div class="calc__n2--head">
-                    <h2>Рассчитайте стоимость переноса</h2>
+                    <h2>Рассчитайте стоимость<br>переноса</h2>
+                    <p>Тип стен:</p>
+                    <div class="select-wrap">
+                        <select id="selected" onclick="caclTwoSel()">
+                            <option value="0">Кирпич</option>
+                            <option value="1">Пеноблок</option>
+                            <option value="2">Бетон</option>
+                        </select>
+                        <img src="./img/arrow-select.svg" alt="" class="select-arrow">
+                    </div>
                     <div class="head">
                         <h3>Наименования работ</h3>
                         <h3>Кол-во шт</h3>
@@ -176,87 +185,63 @@
                 </div>
                 <div class="calc__n2--body">
                     <div class="body__calc--elem">
-                        <p>Высверливание отверстия в стене под подрозетник в бетоне</p>
+                        <p>Высверливание отверстия в стене под подрозетник</p>
                         <label>
-                            <input id="inp1" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('1', 0, 350)">
+                            <input id="inp0" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('0', 0, 1)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
-                        <p>Высверливание отверстия в стене под подрозетник в кирпиче</p>
+                        <p>Штробление стены<br>(Глубина до 20 мм)</p>
                         <label>
-                            <input id="inp2" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('2', 1, 250)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Высверливание отверстия в стене под подрозетник в пеноблоке</p>
-                        <label>
-                            <input id="inp3" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('3', 2, 180)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Штробление стены в бетоне<br>(Глубина до 20 мм)</p>
-                        <label>
-                            <input id="inp4" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('4', 3, 350)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Штробление стены в кирпиче<br>(Глубина до 20 мм)</p>
-                        <label>
-                            <input id="inp5" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('5', 4, 250)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Штробление стены в пеноблоке<br>(Глубина до 20 мм)</p>
-                        <label>
-                            <input id="inp6" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('6', 5, 180)">
+                            <input id="inp1" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('1', 1, 1)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Прокладка кабеля в стене / потолке без гофры</p>
                         <label>
-                            <input id="inp7" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('7', 6, 80)">
+                            <input id="inp2" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('2', 2, 80)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Прокладка кабеля в стене /потолке в гофре</p>
                         <label>
-                            <input id="inp8" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('8', 7, 100)">
+                            <input id="inp3" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('3', 3, 100)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Установка подрозетника</p>
                         <label>
-                            <input id="inp9" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('9', 8, 100)">
+                            <input id="inp4" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('4', 4, 100)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Финишная установка розетки /выключателя</p>
                         <label>
-                            <input id="inp10" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('10', 9, 180)">
+                            <input id="inp5" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('5', 5, 180)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Финишная установка переключателя</p>
                         <label>
-                            <input id="inp11" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('11', 10, 220)">
+                            <input id="inp6" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('6', 6, 220)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Штукатурка штробы</p>
                         <label>
-                            <input id="inp12" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('12', 11, 150)">
+                            <input id="inp7" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('7', 7, 150)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Расключение распаечных коробок наружных с установкой</p>
                         <label>
-                            <input id="inp13" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('13', 12, 500)">
+                            <input id="inp8" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('8', 8, 500)">
                         </label>
                     </div>
                     <div class="body__calc--elem">
                         <p>Установка дополнительного автомата</p>
                         <label>
-                            <input id="inp14" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('14', 13, 300)">
+                            <input id="inp9" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('9', 9, 300)">
                         </label>
                     </div>
                 </div>
@@ -296,7 +281,7 @@
                             </label>
                             <label>
                                 <p>Ваш номер:</p>
-                                <input id="number" type="text" placeholder="+7(___)-___-__-__" required>
+                                <input id="numbers" type="text" placeholder="+7(___)-___-__-__" required>
                             </label>
                             </div>
                             <label>

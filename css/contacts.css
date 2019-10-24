@@ -58,6 +58,7 @@ textarea:hover {
   opacity: 0.7;
   margin-bottom: 25px;
   margin-right: 30px;
+  outline: none;
 }
 
 #contform input[type="text"]:hover {
@@ -138,6 +139,7 @@ textarea:hover {
   }
   #contform input[type="text"] {
     width: 280px;
+    outline: none;
   }
   .btnfor {
     width: 280px;
