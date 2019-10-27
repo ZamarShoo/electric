@@ -22,7 +22,7 @@ nav section {
 }
 
 .navigation__up .mail-header {
-  color: #88ABD4;
+  color: white;
 }
 
 .navigation__up ul {
@@ -71,12 +71,12 @@ nav section {
   font-size: 12px;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: .3s ease;
 }
 
 .phone__nav:hover {
   background-color: #00489D;
   border: 1px solid #00489D;
-  transition: .3s;
 }
 
 .logo h2 {
@@ -96,9 +96,10 @@ nav section {
 }
 
 .menu ul .navi--a {
-  opacity: .8;
+  opacity: .6;
   position: relative;
   padding: 0 20px 20px;
+  transition: 0.2s ease;
 }
 
 .menu ul .navi--a:hover {
@@ -280,6 +281,7 @@ nav section {
   padding: 15px 22px;
   color: #001535;
   outline: none;
+  border-radius: 0px;
 }
 
 .calc__n2--footer {
@@ -305,9 +307,15 @@ nav section {
 
 #calculator .calculator__n2 #value-final {
   font-family: 'Proxima Nova Extra Bold';
-  font-size: 40px;
+  font-size: 60px;
   line-height: 130%;
   color: #00489D;
+}
+
+@media screen and (max-width: 824px) {
+  #calculator .calculator__n2 #value-final {
+    font-size: 40px;
+  }
 }
 
 span {
@@ -353,6 +361,16 @@ span {
   visibility: visible;
   opacity: 1;
   display: block;
+  animation: box 1s ease;
+}
+
+@keyframes box {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu ul li ul li {
@@ -397,6 +415,10 @@ span {
   display: none;
 }
 
+.fixed .logo h2 {
+  margin-top: -7px;
+}
+
 .fixed hr {
   margin: 0;
   display: none;
@@ -413,7 +435,7 @@ span {
 header {
   background-image: url("../img/header-bg.jpeg");
   width: 100vw;
-  height: 900px;
+  height: 700px;
   position: relative;
   z-index: 1;
 }
@@ -427,8 +449,24 @@ header {
   position: absolute;
 }
 
+@media screen and (max-height: 730px) {
+  header {
+    height: 100vh;
+  }
+  .header__left {
+    margin-top: 151px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .header__left {
+    margin-top: 151px;
+  }
+}
+
 .header__left {
-  padding-top: 211px;
+  display: inline-block;
+  margin-top: 251px;
   width: 625px;
 }
 
@@ -456,24 +494,19 @@ header {
   position: relative;
 }
 
-.btn__popup:hover img, .btn__str:hover img {
-  animation-duration: 2s;
-  animation-name: arrow;
-}
-
 .btn__popup img, .btn__str img {
   position: absolute;
   margin-top: 4px;
   margin-left: 10px;
+  transition: .3s ease;
 }
 
-@keyframes arrow {
-  from {
-    margin-left: 10px;
-  }
-  to {
-    margin-left: 15px;
-  }
+.btn__popup:hover > img {
+  margin-left: 15px;
+}
+
+.btn__str:hover > img {
+  margin-left: 15px;
 }
 
 .template__cards {
@@ -496,6 +529,7 @@ header {
 
 .service__card img {
   height: 100%;
+  transition: 1s ease;
 }
 
 .service__card h3 {
@@ -514,8 +548,7 @@ header {
 }
 
 .service__card:hover > img {
-  transform: scale(1.2);
-  transition: 1s;
+  transform: scale(1.1);
 }
 
 .card--bg {
@@ -624,11 +657,11 @@ header {
 
 .project__card img {
   height: 100%;
+  transition: 1s ease;
 }
 
-.project__card:hover > .project__text {
-  width: 100%;
-  transition: 1s;
+.project__card:hover > img {
+  transform: scale(1.1);
 }
 
 .project__text {
@@ -638,6 +671,7 @@ header {
   width: 270px;
   height: 86px;
   bottom: 0;
+  z-index: 2;
 }
 
 .project__text h3 {
@@ -653,6 +687,7 @@ header {
 
 .posts h2 {
   margin: 140px 0 50px;
+  font-weight: bold;
 }
 
 .post__card {
@@ -755,6 +790,7 @@ label > input {
   color: #FFFFFF;
   padding-left: 20px;
   outline: none;
+  border-radius: 0px;
 }
 
 label > input:hover,
@@ -853,6 +889,7 @@ footer {
 
 .footer-admin {
   display: flex;
+  margin-top: 6px;
 }
 
 .admf {
@@ -870,7 +907,7 @@ footer {
 }
 
 .footer-social {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .social-vk {

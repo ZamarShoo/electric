@@ -19,12 +19,23 @@ $('.show_popup').click(function() {
 
 //Header Scroll for desktop
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 300) {
         $('nav').addClass('fixed');
     } else {
         $('nav').removeClass('fixed');
     }
   });
+
+//Magnific Popup
+jQuery(document).ready(function() {
+  $(".item-gallery").magnificPopup({
+    type : 'image',
+    gallery : {
+      enabled : true
+    }
+  });
+});
+
 
 //Header Scroll for mobile
 $(window).scroll(function(){
@@ -34,6 +45,8 @@ $(window).scroll(function(){
         $('menu').removeClass('mobile-backcolor');
     }
   });
+
+
 
 //calcOne
 const socket = [
@@ -47,10 +60,9 @@ let selectType = 0;
 let calcType = 1;
 let metrType = 1;
 
-var price = document.getElementById("calc-final");
-var rub = document.getElementById("span__calc");
-
 function outputCalcOne() {
+  var price = document.getElementById("calc-final");
+  var rub = document.getElementById("span__calc");
 
   let finish = (metrType * calcType);
   if (finish == 0) {
@@ -149,3 +161,5 @@ function caclTwoSel() {
   }
   refresh()
 }
+
+

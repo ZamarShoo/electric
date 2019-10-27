@@ -104,8 +104,8 @@ h3 {
 
 p {
   font-family: 'Proxima Nova Regular';
-  color: #88ABD4;
-  opacity: 0.78;
+  color: white;
+  opacity: 0.4;
 }
 
 a {
@@ -143,7 +143,7 @@ nav section {
 }
 
 .navigation__up .mail-header {
-  color: #88ABD4;
+  color: white;
 }
 
 .navigation__up ul {
@@ -192,12 +192,12 @@ nav section {
   font-size: 12px;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: .3s ease;
 }
 
 .phone__nav:hover {
   background-color: #00489D;
   border: 1px solid #00489D;
-  transition: .3s;
 }
 
 .logo h2 {
@@ -217,9 +217,10 @@ nav section {
 }
 
 .menu ul .navi--a {
-  opacity: .8;
+  opacity: .6;
   position: relative;
   padding: 0 20px 20px;
+  transition: 0.2s ease;
 }
 
 .menu ul .navi--a:hover {
@@ -401,6 +402,7 @@ nav section {
   padding: 15px 22px;
   color: #001535;
   outline: none;
+  border-radius: 0px;
 }
 
 .calc__n2--footer {
@@ -426,9 +428,15 @@ nav section {
 
 #calculator .calculator__n2 #value-final {
   font-family: 'Proxima Nova Extra Bold';
-  font-size: 40px;
+  font-size: 60px;
   line-height: 130%;
   color: #00489D;
+}
+
+@media screen and (max-width: 824px) {
+  #calculator .calculator__n2 #value-final {
+    font-size: 40px;
+  }
 }
 
 span {
@@ -474,6 +482,16 @@ span {
   visibility: visible;
   opacity: 1;
   display: block;
+  animation: box 1s ease;
+}
+
+@keyframes box {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .menu ul li ul li {
@@ -518,6 +536,10 @@ span {
   display: none;
 }
 
+.fixed .logo h2 {
+  margin-top: -7px;
+}
+
 .fixed hr {
   margin: 0;
   display: none;
@@ -534,7 +556,7 @@ span {
 header {
   background-image: url("../img/header-bg.jpeg");
   width: 100vw;
-  height: 900px;
+  height: 700px;
   position: relative;
   z-index: 1;
 }
@@ -548,8 +570,24 @@ header {
   position: absolute;
 }
 
+@media screen and (max-height: 730px) {
+  header {
+    height: 100vh;
+  }
+  .header__left {
+    margin-top: 151px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .header__left {
+    margin-top: 151px;
+  }
+}
+
 .header__left {
-  padding-top: 211px;
+  display: inline-block;
+  margin-top: 251px;
   width: 625px;
 }
 
@@ -577,24 +615,19 @@ header {
   position: relative;
 }
 
-.btn__popup:hover img, .btn__str:hover img {
-  animation-duration: 2s;
-  animation-name: arrow;
-}
-
 .btn__popup img, .btn__str img {
   position: absolute;
   margin-top: 4px;
   margin-left: 10px;
+  transition: .3s ease;
 }
 
-@keyframes arrow {
-  from {
-    margin-left: 10px;
-  }
-  to {
-    margin-left: 15px;
-  }
+.btn__popup:hover > img {
+  margin-left: 15px;
+}
+
+.btn__str:hover > img {
+  margin-left: 15px;
 }
 
 .template__cards {
@@ -617,6 +650,7 @@ header {
 
 .service__card img {
   height: 100%;
+  transition: 1s ease;
 }
 
 .service__card h3 {
@@ -635,8 +669,7 @@ header {
 }
 
 .service__card:hover > img {
-  transform: scale(1.2);
-  transition: 1s;
+  transform: scale(1.1);
 }
 
 .card--bg {
@@ -745,11 +778,11 @@ header {
 
 .project__card img {
   height: 100%;
+  transition: 1s ease;
 }
 
-.project__card:hover > .project__text {
-  width: 100%;
-  transition: 1s;
+.project__card:hover > img {
+  transform: scale(1.1);
 }
 
 .project__text {
@@ -759,6 +792,7 @@ header {
   width: 270px;
   height: 86px;
   bottom: 0;
+  z-index: 2;
 }
 
 .project__text h3 {
@@ -774,6 +808,7 @@ header {
 
 .posts h2 {
   margin: 140px 0 50px;
+  font-weight: bold;
 }
 
 .post__card {
@@ -876,6 +911,7 @@ label > input {
   color: #FFFFFF;
   padding-left: 20px;
   outline: none;
+  border-radius: 0px;
 }
 
 label > input:hover,
@@ -974,6 +1010,7 @@ footer {
 
 .footer-admin {
   display: flex;
+  margin-top: 6px;
 }
 
 .admf {
@@ -991,7 +1028,7 @@ footer {
 }
 
 .footer-social {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .social-vk {
@@ -1118,12 +1155,6 @@ footer {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1620px) and (max-height: 900px) {
-  header {
-    height: 100vh;
-  }
-}
-
 @media screen and (max-width: 1520px) {
   nav section {
     width: 1110px;
@@ -1152,12 +1183,6 @@ footer {
   }
   .navigation__tel {
     margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 1098px) {
-  .hiiderm {
-    display: none;
   }
 }
 
@@ -1247,9 +1272,6 @@ footer {
   }
   .logo h2 {
     margin-top: 0;
-  }
-  .template__cards {
-    justify-content: space-between;
   }
   .mobile-backcolor {
     background-color: #001F44;
@@ -1482,20 +1504,13 @@ footer {
   .post__text .text {
     font-size: 16px;
   }
-  .project__card {
-    width: 280px;
-    height: 280px;
-  }
-  .project__card p {
-    font-size: 16px;
-  }
   .service__card h3 {
     margin-bottom: 30px;
     margin-left: 30px;
   }
   .pluses__card {
-    width: 280px;
-    height: 250px;
+    width: 230px;
+    height: 200px;
   }
   .pluses__card img {
     height: 60px;
@@ -1504,16 +1519,23 @@ footer {
   .pluses__card p {
     font-size: 16px;
   }
+  .project__card {
+    width: 230px;
+    height: 230px;
+  }
+  .project__card p {
+    font-size: 16px;
+  }
   .service__card {
-    width: 280px;
-    height: 280px;
+    width: 230px;
+    height: 230px;
   }
   .service__card p {
     font-size: 16px;
   }
   .post__card {
-    width: 280px;
-    height: 390px;
+    width: 230px;
+    height: 340px;
   }
   .post__card p {
     font-size: 16px;
@@ -1542,9 +1564,6 @@ footer {
   }
   .header__left h2 {
     font-size: 28px;
-  }
-  .header__left {
-    padding-top: 130px;
   }
   .info p {
     font-size: 14px;
@@ -1993,6 +2012,7 @@ textarea:hover {
   height: 551px;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 #calculator1 p {
@@ -2020,6 +2040,7 @@ textarea:hover {
   line-height: 130%;
   color: #001535;
   outline: none;
+  border-radius: 0px;
 }
 
 #calculator1 input[type="text"]:hover {
@@ -2116,24 +2137,7 @@ textarea:hover {
 
 input[type="radio"] {
   display: none;
-}
-
-.tab, .tab-title {
-  display: inline-block;
-}
-
-.tabs {
-  margin-top: 10px;
-  position: absolute;
-}
-
-.tab :checked + .tab-title {
-  position: relative;
-  z-index: 1;
-  border: 1px solid #00489D;
-  border-bottom: 1px solid white;
-  opacity: 1;
-  color: #00489D;
+  border-radius: 0px;
 }
 
 .tab :hover + .tab-title {
@@ -2142,7 +2146,69 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-.tab :checked ~ .tab-content {
+.tabs {
+  width: 100%;
+  padding: 0px;
+  margin: 10px auto 0;
+}
+
+.tabs > input {
+  display: none;
+}
+
+.tabs > div {
+  display: none;
+  padding: 10px 40px;
+  border-top: 1px solid #00489D;
+}
+
+.tabs > label {
+  display: inline-block;
+  padding: 10px 40px;
+  margin: 0 -5px -1px 0;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Proxima Nova Bold';
+  font-size: 16px;
+  line-height: 125%;
+  color: #001535;
+  opacity: 0.6;
+}
+
+.tabs > input:hover + label {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  color: #00489D;
+}
+
+.tabs > input:hover + label .circle .circlein {
+  display: block;
+  color: #00489D;
+}
+
+.tabs > input:checked + label {
+  position: relative;
+  z-index: 1;
+  border: 1px solid #00489D;
+  border-bottom: 1px solid white;
+  opacity: 1;
+  color: #00489D;
+  font-family: 'Proxima Nova Bold';
+  line-height: 125%;
+}
+
+.tabs > input:checked + label .circle {
+  opacity: 1;
+}
+
+.tabs > input:checked + label .circle .circlein {
+  display: block;
+}
+
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3 {
   display: block;
 }
 
@@ -2151,7 +2217,6 @@ input[type="radio"] {
   display: none;
   left: 0;
   padding-top: 30px;
-  width: 550px;
 }
 
 .tab-content h4 {
@@ -2201,15 +2266,6 @@ input[type="radio"] {
   margin-left: -20px;
 }
 
-.tab-title {
-  padding: 10px 40px;
-  font-family: 'Proxima Nova Bold';
-  font-size: 16px;
-  line-height: 125%;
-  color: #001535;
-  opacity: 0.6;
-}
-
 #calculator1 #calc-final {
   font-family: 'Proxima Nova Extra Bold';
   font-size: 60px;
@@ -2228,13 +2284,6 @@ input[type="radio"] {
 
 .price__calc span {
   margin-top: 30px;
-}
-
-.tabs-line {
-  width: 100%;
-  border-bottom: 1px solid #00489d;
-  margin-top: 11px;
-  position: absolute;
 }
 
 .circle {
@@ -2314,7 +2363,7 @@ input[type="radio"] {
   #calculator1 {
     width: 100%;
     display: block;
-    height: 751px;
+    height: 851px;
   }
   .calc1__l-col {
     width: 100%;
@@ -2338,12 +2387,45 @@ input[type="radio"] {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .hiiderm {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .calc1__r-elem {
     padding: 30px 20px;
   }
   .number__calc {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service__card,
+  .pluses__card,
+  .project__card {
+    width: 300px;
+    height: 300px;
+  }
+  .pluses__card p {
+    font-size: 16px;
+  }
+  .post__card {
+    position: relative;
+    width: 300px;
+    height: 412px;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  .sert img {
+    width: 205px;
+    height: 310px;
+  }
+  .project__photo img {
+    width: 300px;
+    height: 196px;
   }
 }
 
@@ -2376,7 +2458,7 @@ input[type="radio"] {
     width: 100%;
   }
   #calculator1 {
-    height: 1250px;
+    height: 1350px;
   }
   .under-select {
     display: block;
@@ -2398,15 +2480,13 @@ input[type="radio"] {
   }
   .tabs {
     margin-top: 10px;
-    position: absolute;
-    width: 488px;
     height: 100%;
-  }
-  .tab-content {
-    width: 75vw;
   }
   .calc1__l-col {
     min-height: 700px;
+  }
+  .tabs > div {
+    padding: 10px 15px;
   }
 }
 
@@ -2429,6 +2509,54 @@ input[type="radio"] {
   .btn__calc2 {
     margin-top: 10px;
   }
+  .tabs {
+    width: 560px;
+    margin-left: -25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabs > label {
+    padding-right: 14px;
+    padding-left: 25px;
+    font-size: 14px;
+  }
+  .circle {
+    margin-left: -17px;
+  }
+  .project__card,
+  .service__card,
+  .pluses__card {
+    width: 100%;
+    height: 360px;
+  }
+  .pluses__bottom {
+    margin-top: 100px;
+  }
+  .post__card {
+    width: 100%;
+    height: 490px;
+  }
+  .l__project {
+    height: 300px;
+  }
+  #contform input[type="text"] {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .btnfor {
+    width: 100%;
+    padding: 1em 6em;
+  }
+  #contform .policy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__left {
+    margin-top: 201px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -2437,9 +2565,49 @@ input[type="radio"] {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .project__card,
+  .service__card,
+  .pluses__card {
+    height: 290px;
+  }
+  .pluses__bottom {
+    margin-top: 70px;
+  }
+  .post__card {
+    height: 430px;
+  }
+  .l__project {
+    height: 230px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .btn__calc {
     padding: 1em 5em;
+  }
+  .tabs {
+    margin-left: -20px;
+  }
+  .project__card,
+  .service__card,
+  .pluses__card {
+    height: 300px;
+  }
+  .pluses__bottom {
+    margin-top: 100px;
+  }
+  .post__card {
+    height: 400px;
+  }
+  .l__project {
+    height: 200px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .header__left {
+    margin-top: 151px;
   }
 }
 
