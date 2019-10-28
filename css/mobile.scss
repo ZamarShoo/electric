@@ -69,6 +69,10 @@
 }
 
 @media screen and (max-width: 980px) {
+    .bg__mb__templ {
+        display: block;
+    }
+
     .form-dark__up h3 {
         width: 100%;
         text-align: center;
@@ -84,6 +88,12 @@
     nav {
         height: 1px;
         opacity: 0;
+        display: none;
+    }
+
+    .bg__nav {
+        padding: 0;
+        height: 1px;
         display: none;
     }
 
@@ -122,6 +132,7 @@
         display: block;
         position: absolute;
         width: 100%;
+        top: 0;
     }
 
     .logo {

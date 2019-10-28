@@ -3,6 +3,8 @@ nav {
     margin-top: 20px;
     width: 100%;
     height: 110px;
+    z-index: 20;
+    top: 0;
 
     section {
         width: 1210px;
@@ -502,20 +504,21 @@ header {
 
     img {
         position: absolute;
-        margin-top: 4px;
-        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 31px;
         transition: .3s ease;
-
+        right: 0;
+        top: 0;
     }
 
 }
 
 .btn__popup:hover > img {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .btn__str:hover > img {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 //---------------------------------------------Service
@@ -839,7 +842,8 @@ input[type="submit"] {
     cursor: pointer;
 
     img {
-        margin-top: 6px;
+        margin-top: 21px;
+        margin-right: 65px;
     }
 }
 
@@ -1014,6 +1018,10 @@ footer {
     margin-top: -210px;
     margin-left: -365px;
     opacity: 1;
+    display: none;
+}
+
+.bg__mb__templ {
     display: none;
 }
 

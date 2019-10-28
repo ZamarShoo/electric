@@ -124,6 +124,8 @@ nav {
   margin-top: 20px;
   width: 100%;
   height: 110px;
+  z-index: 20;
+  top: 0;
 }
 
 nav section {
@@ -617,17 +619,19 @@ header {
 
 .btn__popup img, .btn__str img {
   position: absolute;
-  margin-top: 4px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 31px;
   transition: .3s ease;
+  right: 0;
+  top: 0;
 }
 
 .btn__popup:hover > img {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .btn__str:hover > img {
-  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .template__cards {
@@ -939,7 +943,8 @@ input[type="submit"] {
 }
 
 .btn__submit img {
-  margin-top: 6px;
+  margin-top: 21px;
+  margin-right: 65px;
 }
 
 .form__dark {
@@ -1110,6 +1115,10 @@ footer {
   display: none;
 }
 
+.bg__mb__templ {
+  display: none;
+}
+
 .ppp__form {
   margin: 30px;
   border: 1px solid white;
@@ -1217,6 +1226,9 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
+  .bg__mb__templ {
+    display: block;
+  }
   .form-dark__up h3 {
     width: 100%;
     text-align: center;
@@ -1231,6 +1243,11 @@ footer {
   nav {
     height: 1px;
     opacity: 0;
+    display: none;
+  }
+  .bg__nav {
+    padding: 0;
+    height: 1px;
     display: none;
   }
   .label__form {
@@ -1262,6 +1279,7 @@ footer {
     display: block;
     position: absolute;
     width: 100%;
+    top: 0;
   }
   .logo {
     position: relative;
@@ -2125,6 +2143,7 @@ textarea:hover {
   right: 0;
   margin-top: 21px;
   margin-right: 20px;
+  top: 0;
 }
 
 .select-wrapper > select > option {
@@ -2144,6 +2163,46 @@ input[type="radio"] {
   opacity: 1;
   color: #00489D;
   cursor: pointer;
+}
+
+.post__next img {
+  margin-top: 7px;
+  margin-right: -26px;
+}
+
+.post__next:hover > img {
+  margin-right: -41px;
+}
+
+.btn__submit img {
+  margin-right: 51px;
+}
+
+.btn__submit:hover > img {
+  margin-right: 36px;
+}
+
+.btn__calc img,
+.btn__calc2 img {
+  margin-right: 105px;
+}
+
+.btn__calc:hover > img,
+.btn__calc2:hover > img {
+  margin-right: 90px;
+}
+
+.btn--blue img {
+  margin-top: 5px;
+  margin-right: -20px;
+}
+
+.bread a:hover {
+  opacity: 1;
+}
+
+.btn--blue:hover > img {
+  margin-right: -35px;
 }
 
 .tabs {
@@ -2402,7 +2461,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1130px) {
   .service__card,
   .pluses__card,
   .project__card {
@@ -2444,6 +2503,63 @@ input[type="radio"] {
   }
   .btn__calc {
     padding: 1em 4.5em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .service__card,
+  .pluses__card,
+  .project__card {
+    width: 250px;
+    height: 250px;
+  }
+  .pluses__card p {
+    font-size: 16px;
+  }
+  .post__card {
+    position: relative;
+    width: 250px;
+    height: 362px;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  .service__card h3 {
+    font-size: 15px;
+  }
+  .project__text h3 {
+    font-size: 15px;
+    margin: 29px 0 0 10px;
+    width: 200px;
+  }
+  .pluses__card p {
+    font-size: 15px;
+  }
+  .post__text .text {
+    font-size: 14px;
+  }
+  .post__next {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .service__card,
+  .pluses__card,
+  .project__card {
+    width: 220px;
+    height: 220px;
+  }
+  .pluses__card p {
+    font-size: 16px;
+  }
+  .pluses__bottom {
+    margin-top: 15px;
+  }
+  .pluses__card {
+    padding: 20px;
+  }
+  .pluses__card p {
+    font-size: 14px;
   }
 }
 
@@ -2549,6 +2665,7 @@ input[type="radio"] {
   .btnfor {
     width: 100%;
     padding: 1em 6em;
+    display: flex;
   }
   #contform .policy {
     margin-left: auto;
@@ -2556,6 +2673,23 @@ input[type="radio"] {
   }
   .header__left {
     margin-top: 201px;
+  }
+  .service__card h3 {
+    font-size: 18px;
+  }
+  .pluses__card p {
+    font-size: 17px;
+    margin-top: 90px;
+  }
+  .project__text h3 {
+    font-size: 17px;
+    margin: 20px 0 0 10px;
+  }
+  .post__text .text {
+    font-size: 18px;
+  }
+  .post__next {
+    font-size: 16px;
   }
 }
 
