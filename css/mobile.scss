@@ -3,11 +3,11 @@
 @media screen and (max-width: 1520px) {
 
     nav section {
-        width: 1110px;
+        width: 1138px;
     }
 
     .fixed nav section {
-        width: 1110px;
+        width: 1138px;
     }
 }
 
@@ -24,9 +24,6 @@
 }
 
 @media screen and (max-width: 1118px) {
-    .template__cards {
-        justify-content: space-around;
-    }
     .navigation__up ul li {
         margin-right: 30px;
     }
@@ -69,6 +66,7 @@
 }
 
 @media screen and (max-width: 980px) {
+
     .bg__mb__templ {
         display: block;
     }
@@ -124,10 +122,6 @@
         width: 100%;
     }
 
-    .kaska {
-        margin-left: -430px;
-    }
-
     .hamburger-menu {
         display: block;
         position: absolute;
@@ -139,7 +133,7 @@
         position: relative;
         left: 0;
         z-index: 10;
-        margin-top: 30px;
+        margin-top: -5px;
         margin-left: 24px;
 
         h2 {
@@ -171,7 +165,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 54px;
+    top: 23px;
     right: 24px;
     width: 42px;
     height: 26px;
@@ -289,37 +283,13 @@
         height: 320px;
         margin-bottom: 20px;
     }
-
-    .pluses__card {
-        width: 320px;
-        height: 270px;
-        padding: 30px;
-        margin-bottom: 20px;
-
-        img {
-            height: 80px;
-            width: 80px;
-        }
-    }
-
     .pluses__number {
         padding: 30px 30px 0 0;
     }
-
-    .service__card {
-        width: 320px;
-        height: 320px;
-        margin-bottom: 20px;
-    }
-
     .post__card {
         width: 320px;
         height: 432px;
         margin-bottom: 20px;
-    }
-
-    .kaska {
-        margin-left: -600px;
     }
 }
 
@@ -354,18 +324,8 @@
         font-size: 26px;
     }
 
-    .dark-form {
-        height: 530px;
-    }
-
     .policy {
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 606px) {
-    .template__cards {
-        justify-content: space-around;
     }
 }
 
@@ -415,20 +375,6 @@
         margin-left: 30px;
     }
 
-    .pluses__card {
-        width: 230px;
-        height: 200px;
-
-        img {
-            height: 60px;
-            width: 60px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-    }
-
     .project__card {
         width: 230px;
         height: 230px;
@@ -439,7 +385,6 @@
     }
 
     .service__card {
-        width: 230px;
         height: 230px;
 
         p {
@@ -458,6 +403,53 @@
 
 }
 
+@media screen and (max-width: 750px) {
+    #calculator {
+        width: 100%;
+    }
+
+    .calc__n2--head {
+        padding: 20px 20px 0;
+    }
+
+    .calc__n2--body {
+        margin: 0 20px;
+    } 
+
+    .calc__n2--footer {
+        margin: 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fdup h3 {
+        font-size: 35px;
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #calculator .calculator__n2 h2 {
+        font-size: 18px;
+    }
+
+    #calculator .calculator__n2 h3 {
+        font-size: 14px;
+    }
+
+    #calculator .calculator__n2 p {
+        font-size: 14px;
+    }
+
+    .calc__n2--body .body__calc--elem input[type="text"] {
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .third-slide {
         overflow: hidden;
@@ -468,13 +460,6 @@
         height: 438px;
         margin-right: -20px;
         padding: 30px 20px 30px 30px;
-    }
-
-    .kaska {
-        width: 505px;
-        height: 375px;
-        margin-left: -300px;
-        margin-top: 100px;
     }
 
     .info h3 {
@@ -503,14 +488,6 @@
         font-size: 14px;
     }
 
-    .logo {
-        margin-top: 20px;
-    }
-
-    .menu__btn {
-        top: 46px;
-    }
-
     .h2__light {
         margin-bottom: 30px;
     }
@@ -526,52 +503,65 @@
         padding-top: 30px;
     }
 
-    .dark-form {
-        height: 490px;
-    }
-
     .dark__form__section {
         padding: 0;
     }
+
+    .fdup h3 {
+        font-size: 28px;
+        margin-top: 52px;
+    }
+
+    .frmpos {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 140px;
+        margin-left: -170px;
+        left: 50%;
+    }
+
+    .fdup {
+        padding: 0;
+        margin: 10px;
+        height: 438px;
+    }
+
+    header {
+        margin-top: 0px;
+    }
 }
 
-@media screen and (max-width: 750px) {
-    #calculator {
-        width: 100%;
+@media screen and (max-width: 400px) {
+    .frmpos {
+        margin-bottom: 40px;
+        margin-left: -148px;
+        font-size: 13px;
+
+        img {
+            margin-top: 16px;
+            margin-right: 25px;
+        }
     }
 
-    .calc__n2--head {
-        padding: 20px 20px 0;
+    .fdup h3 {
+        font-size: 20px;
+        margin-top: 30px;
     }
 
-    .calc__n2--body {
-        margin: 0 20px;
-    } 
+    .fdup {
+        padding: 0;
+        margin: 10px;
+        height: 237px;
 
-    .calc__n2--footer {
-        margin: 20px 20px 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #calculator .calculator__n2 h2 {
-        font-size: 18px;
-    }
-
-    #calculator .calculator__n2 h3 {
-        font-size: 14px;
-    }
-
-    #calculator .calculator__n2 p {
-        font-size: 14px;
-    }
-
-    .calc__n2--body .body__calc--elem input[type="text"] {
-        width: 80px;
-        height: 40px;
-        font-size: 16px;
-        padding: 10px;
+        .frmpos {
+            margin-bottom: 40px;
+            margin-left: -148px;
+            font-size: 13px;
+    
+            img {
+                margin-top: 16px;
+                margin-right: 25px;
+            }
+        }
     }
 }

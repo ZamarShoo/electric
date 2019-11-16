@@ -4,8 +4,11 @@
   margin-top: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
+  position: absolute;
   z-index: 10;
+  margin-bottom: 80px;
+  width: 100%;
+  top: 0;
 }
 
 .template {

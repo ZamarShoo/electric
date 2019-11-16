@@ -1,5 +1,5 @@
 nav {
-  position: absolute;
+  position: relative;
   margin-top: 20px;
   width: 100%;
   height: 110px;
@@ -8,7 +8,11 @@ nav {
 }
 
 nav section {
-  width: 1210px;
+  width: 1310px;
+}
+
+.header__l-col {
+  margin-top: 25px;
 }
 
 .hamburger-menu {
@@ -21,10 +25,11 @@ nav section {
 
 .navigation__up p {
   font-size: 12px;
+  color: #001535;
 }
 
 .navigation__up .mail-header {
-  color: white;
+  color: #001535;
 }
 
 .navigation__up ul {
@@ -51,12 +56,13 @@ nav section {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0.03em;
+  color: #001535;
 }
 
 .tel__rectangle {
   width: 1px;
   height: 14px;
-  background: #FFFFFF;
+  background: #001535;
   margin: 1px 15px 0;
 }
 
@@ -68,12 +74,13 @@ nav section {
   margin-right: 0;
   margin-left: auto;
   display: block;
-  border: 1px solid white;
+  border: 1px solid #001535;
   padding: 1em 2em;
   font-size: 12px;
   letter-spacing: 0.06em;
   cursor: pointer;
   transition: .3s ease;
+  color: #001535;
 }
 
 .phone__nav:hover {
@@ -83,7 +90,7 @@ nav section {
 
 .logo h2 {
   font-size: 34px;
-  color: white;
+  color: #001535;
   margin-top: -10px;
 }
 
@@ -98,7 +105,8 @@ nav section {
 }
 
 .menu ul .navi--a {
-  opacity: .6;
+  color: #001535;
+  opacity: .8;
   position: relative;
   padding: 0 20px 20px;
   transition: 0.2s ease;
@@ -145,7 +153,6 @@ nav section {
 }
 
 .project__photo img {
-  width: 350px;
   height: 246px;
   margin-top: 30px;
 }
@@ -172,7 +179,6 @@ nav section {
     width: 100%;
   }
   .project__photo img {
-    width: 280px;
     height: 246px;
     margin-top: 30px;
   }
@@ -411,6 +417,14 @@ span {
   padding: 0;
 }
 
+.fixed .menu ul .navi--a {
+  color: white;
+}
+
+.fixed .menu ul .navi--a img {
+  color: white;
+}
+
 .fixed .navigation__up {
   height: 1px;
   opacity: 0;
@@ -419,6 +433,7 @@ span {
 
 .fixed .logo h2 {
   margin-top: -7px;
+  color: white;
 }
 
 .fixed hr {
@@ -432,59 +447,16 @@ span {
 
 .fixed .menu ul {
   margin-top: 5px;
-}
-
-header {
-  background-image: url("../img/header-bg.jpeg");
-  width: 100vw;
-  height: 700px;
-  position: relative;
-  z-index: 1;
+  color: white;
 }
 
 .blue--bg {
   background-color: #070f27;
-  opacity: .9;
+  opacity: .8;
   width: 100%;
   height: 100%;
   z-index: 2;
   position: absolute;
-}
-
-@media screen and (max-height: 730px) {
-  header {
-    height: 100vh;
-  }
-  .header__left {
-    margin-top: 151px;
-  }
-}
-
-@media screen and (max-width: 1367px) {
-  .header__left {
-    margin-top: 151px;
-  }
-}
-
-.header__left {
-  display: inline-block;
-  margin-top: 251px;
-  width: 625px;
-}
-
-.header__left h2 {
-  font-size: 45px;
-  font-family: 'Gilroy Bold';
-  color: white;
-  line-height: 130%;
-  margin-bottom: 27px;
-}
-
-.header__left p {
-  font-size: 16px;
-  line-height: 150%;
-  color: #FFFFFF;
-  margin-bottom: 27px;
 }
 
 .btn__popup, .btn__str {
@@ -492,7 +464,7 @@ header {
   letter-spacing: 0.06em;
   display: inline-block;
   padding: 1em 3.5em 1em 2em;
-  background-color: #00489D;
+  background-color: #005CCA;
   position: relative;
 }
 
@@ -506,17 +478,17 @@ header {
 }
 
 .btn__popup:hover > img {
-  margin-right: 15px;
+  margin-right: 21px;
 }
 
 .btn__str:hover > img {
-  margin-right: 15px;
+  margin-right: 21px;
 }
 
 .template__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-right: 0px;
 }
 
 .h2__services {
@@ -526,19 +498,24 @@ header {
 .service__card {
   overflow: hidden;
   position: relative;
-  width: 350px;
-  height: 350px;
-  margin-bottom: 30px;
+  height: 250px;
+  margin-bottom: 15px;
+  display: block;
 }
 
-.service__card img {
+.service__card .in_card {
+  overflow: hidden;
+  margin-right: -15px;
+}
+
+.service__card .in_card img {
   height: 100%;
   transition: 1s ease;
 }
 
 .service__card h3 {
   font-family: 'Proxima Nova Semibold';
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -546,17 +523,18 @@ header {
   position: absolute;
   z-index: 3;
   bottom: 0;
-  margin-bottom: 50px;
-  margin-left: 40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
   font-weight: normal;
+  width: 150px;
 }
 
-.service__card:hover > img {
+.service__card:hover > .in_card img {
   transform: scale(1.1);
 }
 
 .card--bg {
-  background: #001F44;
+  background: #003E88;
 }
 
 .position__btn {
@@ -564,12 +542,9 @@ header {
 }
 
 .kaska {
-  position: absolute;
-  width: 957px;
-  height: 612px;
-  z-index: 2;
-  margin-top: -100px;
-  margin-left: -230px;
+  margin-left: -280px;
+  width: 130%;
+  box-shadow: 30px 30px #005CCA;
 }
 
 .btn--blue {
@@ -620,11 +595,12 @@ header {
 
 .pluses__card {
   position: relative;
-  width: 350px;
-  height: 300px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  padding: 40px;
-  margin-bottom: 30px;
+  bottom: 0;
+  margin-top: 60px;
+}
+
+.pluses__card img {
+  opacity: .8;
 }
 
 .pluses__card p {
@@ -632,7 +608,10 @@ header {
   line-height: 150%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #001535;
+  font-family: 'Proxima Nova Semibold';
+  width: 257px;
+  opacity: .8;
 }
 
 .pluses__number {
@@ -640,7 +619,7 @@ header {
   top: 0;
   right: 0;
   padding: 40px 40px 0 0;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .pluses__bottom {
@@ -728,6 +707,8 @@ header {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  font-weight: bold;
+  opacity: .7;
 }
 
 .post__next {
@@ -745,7 +726,6 @@ header {
 
 .dark-form {
   position: relative;
-  height: 450px;
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
@@ -755,6 +735,33 @@ header {
 
 .dark-form .blue--bg {
   background: linear-gradient(58.34deg, rgba(0, 23, 46, 0.9) 0%, rgba(0, 42, 92, 0.9) 100%);
+}
+
+.dark-form2 {
+  background-image: url("../img/18.png");
+}
+
+.fdup {
+  position: relative;
+  display: flex;
+  height: 540px;
+  min-width: 100px;
+  margin: 30px;
+  border: 1px solid white;
+  z-index: 5;
+  padding: 46px 60px;
+}
+
+.fdup h3 {
+  font-size: 40px;
+  line-height: 125%;
+  color: #FFFFFF;
+  font-weight: normal;
+  margin-right: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
 }
 
 .form-dark__up {

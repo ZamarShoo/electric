@@ -163,107 +163,90 @@
 
 
 
-<!------------Calculator #2------------>
-    <section class="container">
-        <div id="calculator">
-            <div class="calculator__n2">
-                <div class="calc__n2--head">
-                    <h2>Рассчитайте стоимость<br>переноса</h2>
-                    <p>Тип стен:</p>
-                    <div class="select-wrap">
-                        <select id="selected" onclick="caclTwoSel()">
-                            <option value="0">Кирпич</option>
-                            <option value="1">Пеноблок</option>
-                            <option value="2">Бетон</option>
-                        </select>
-                        <img src="./img/arrow-select.svg" alt="" class="select-arrow">
+<!------------Calculator One------------> 
+<section class="container">
+    <div id="calculator1">
+        <div class="calc1__l-col">
+            <div class="l-head">
+                <p class="number__calc num__culc1">01</p>
+                <h2>Рассчитайте стоимость<br>электромонтажа</h2>
+                <p>Выберите тариф:</p>
+                <div class="tabs">
+                    <input type="radio" name="inset" value="" id="tab_1" checked onclick="selectedRadio(0)">
+                    <label for="tab_1"><div class="circle"><div class="circlein"></div></div>Эконом</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_2" onclick="selectedRadio(1)">
+                    <label for="tab_2"><div class="circle"><div class="circlein"></div></div>Стандарт</label>
+                
+                    <input type="radio" name="inset" value="" id="tab_3" onclick="selectedRadio(2)">
+                    <label for="tab_3"><div class="circle"><div class="circlein"></div></div>Премиум</label>
+                
+                    <div id="txt_1" class="tab-content">
+                        <ul>
+                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                        </ul>
                     </div>
-                    <div class="head">
-                        <h3>Наименования работ</h3>
-                        <h3>Кол-во шт</h3>
+                    <div id="txt_2" class="tab-content">
+                        <ul>
+                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                        </ul>
                     </div>
-                </div>
-                <div class="calc__n2--body">
-                    <div class="body__calc--elem">
-                        <p>Высверливание отверстия в стене под подрозетник</p>
-                        <label>
-                            <input id="inp0" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('0', 0, 1)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Штробление стены<br>(Глубина до 20 мм)</p>
-                        <label>
-                            <input id="inp1" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('1', 1, 1)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Прокладка кабеля в стене / потолке без гофры</p>
-                        <label>
-                            <input id="inp2" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('2', 2, 80)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Прокладка кабеля в стене /потолке в гофре</p>
-                        <label>
-                            <input id="inp3" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('3', 3, 100)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Установка подрозетника</p>
-                        <label>
-                            <input id="inp4" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('4', 4, 100)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Финишная установка розетки /выключателя</p>
-                        <label>
-                            <input id="inp5" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('5', 5, 180)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Финишная установка переключателя</p>
-                        <label>
-                            <input id="inp6" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('6', 6, 220)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Штукатурка штробы</p>
-                        <label>
-                            <input id="inp7" class="calc" type="text" placeholder="20 пог м" oninput="calcTwo('7', 7, 150)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Расключение распаечных коробок наружных с установкой</p>
-                        <label>
-                            <input id="inp8" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('8', 8, 500)">
-                        </label>
-                    </div>
-                    <div class="body__calc--elem">
-                        <p>Установка дополнительного автомата</p>
-                        <label>
-                            <input id="inp9" class="calc" type="text" placeholder="20 шт" oninput="calcTwo('9', 9, 300)">
-                        </label>
-                    </div>
-                </div>
-                <div class="calc__n2--footer">
-                    <div class="calc__footer--left">
-                        <p class="star">*Минимальный выезд 1500 руб </p>
-                        <p class="final">Итоговая стоимость</p>
-                        <div class="price__calc">
-                            <p id="value-final">0</p>
-                            <span> руб</span>
-                        </div>
-                    </div>
-                    <div class="calc__footer--right">
-                        <label>
-                            <div class="btn__popup btn__submit btn__calc2">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
-                            <input type="submit" class="btn__popup">
-                        </label>
+                    <div id="txt_3" class="tab-content">
+                        <ul>
+                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="calc1__r-col">
+            <div class="calc1__r-elem">
+                <p class="number__calc">02</p>
+                <p>Тип стен:</p>
+                <div class="select-wrapper">
+                    <select id="select" onclick="calcOneSelect()">
+                        <option value="0">Кирпич</option>
+                        <option value="0">Пеноблок</option>
+                        <option value="1">Бетон</option>
+                    </select>
+                    <img src="./img/arrow-select.svg" alt="" class="select-arrow">
+                </div>
+                <div class="under-select">
+                    <div class="us-l">
+                        <label>
+                            <p>Метраж:</p>
+                            <input type="text" id="input1" placeholder="100м" oninput="calcOneMetr()">
+                        </label>
+                    </div>
+                    <div class="us-r">
+                        <label>
+                            <p>Кол-во розеток:</p>
+                            <input type="text" id="input2" placeholder="100" oninput="calcOneInput()">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="calc1__r-elem">
+                <p class="number__calc">03</p>
+                <p>Итоговая стоимость</p>
+                <div class="price__calc">
+                    <p id="calc-final">0</p>
+                    <span id="span__calc"> руб</span>
+                </div>
+                <label>
+                    <div class="btn__popup show_popup btn__submit btn__calc">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
+                    <input type="submit" class="btn__popup" href="#">
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+
 
             
         
@@ -292,7 +275,7 @@
                 </form>
             </div>
         </div>
-    </div>  
+        </div> 
             
             
             

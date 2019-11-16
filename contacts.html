@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Contacts</title>
 </head>
@@ -45,22 +46,22 @@
                 <section>
                 <div class="navigation__up">
                     <ul>
-                        <li><p>Сб Ул. Караваевская 23 оф.12</p></li>
-                        <li><p class="date__work">Пн-Сб 9:00-20:00</p></li>
-                        <li><p><a class="mail-header" href="mail:#">dvabro@inbox.ru</a></p></li>
+                        <li><p class="white__text">Сб Ул. Караваевская 23 оф.12</p></li>
+                        <li><p class="date__work white__text">Пн-Сб 9:00-20:00</p></li>
+                        <li><p><a class="mail-header white__text" href="mail:#">dvabro@inbox.ru</a></p></li>
                     </ul>
                     <div class="navigation__tel">
-                        <a href="tel:#">8 999 068 81 78</a>
-                        <div class="tel__rectangle"></div>
-                        <a href="tel:#">8 999 234 36 49</a>
+                        <a class="white__text" href="tel:#">8 999 068 81 78</a>
+                        <div class="tel__rectangle white__rec"></div>
+                        <a class="white__text" href="tel:#">8 999 234 36 49</a>
                     </div>
-                    <a class="phone__nav show_popup" rel="popup_open">ОБРАТНЫЙ ЗВОНОК</a>
+                    <a class="phone__nav show_popup white__text white_brdr" rel="popup_open">ОБРАТНЫЙ ЗВОНОК</a>
                 </div>
                 <hr>
                 <div class="menu">
-                    <a href="index.html" class="logo"><h2>Electro</h2></a>
+                    <a href="index.html" class="logo white__text"><h2>Electro</h2></a>
                     <ul>
-                        <li><a class="navi--a" href="services.html">Услуги<img src="./img/arrow-down.svg" alt=""></a>
+                        <li><a class="navi--a white__text" href="services.html">Услуги<img src="./img/arr-downw.svg" alt=""></a>
                             <ul class="dropdown">
                                 <li><a href="services-template.html">Монтаж новой электропроводки</a></li>
                                 <li><a href="services-template.html">Замена старой электропроводки</a></li>
@@ -69,10 +70,10 @@
                                 <li><a href="services-template.html">Монтаж новой электропроводки</a></li>
                             </ul>
                         </li>
-                        <li><a class="navi--a" href="about.html">О Компании</a></li>
-                        <li><a class="navi--a" href="project.html">Наши работы</a></li>
-                        <li><a class="navi--a" href="blog.html">Статьи</a></li>
-                        <li><a class="navi--a" href="contacts.html">Контакты</a></li>
+                        <li><a class="navi--a white__text" href="about.html">О Компании</a></li>
+                        <li><a class="navi--a white__text" href="project.html">Наши работы</a></li>
+                        <li><a class="navi--a white__text" href="price.html">Цены</a></li>
+                        <li><a class="navi--a white__text" href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
             </section>
@@ -91,7 +92,7 @@
       <li><a class="menu__item" href="services.html">Услуги</a></li>
       <li><a class="menu__item" href="about.html">О Компании</a></li>
       <li><a class="menu__item" href="project.html">Наши работы</a></li>
-      <li><a class="menu__item" href="blog.html">Статьи</a></li>
+      <li><a class="menu__item" href="price.html">Цены</a></li>
       <li><a class="menu__item" href="contacts.html">Контакты</a></li>
     </ul>
 </menu>
@@ -99,67 +100,67 @@
 
 
 <!------------Contacts------------>
-<section class="template">
-    <div class="bread">
-        <a href="index.html">Главная</a><div class="ver"></div><p>Контакты</p>
-    </div>
-    <h1>Контакты</h1>
-    <div class="formcontact">
-        <div class="cont__l-col">
-            <div class="fc">
-                <div class="c__gray">телефон:</div>
-                <div class="c__blue c__blue--mb">8 999 068 81 78</div>
-                <div class="c__blue">8 999 234 36 49</div>
+<div class="container template">
+        <div class="bread">
+            <a href="index.html">Главная</a><div class="ver"></div><p>Контакты</p>
+        </div>
+        <h1>Контакты</h1>
+        <div class="formcontact">
+            <div class="cont__l-col col-xl-4">
+                <div class="fc">
+                    <div class="c__gray">телефон:</div>
+                    <div class="c__blue c__blue--mb">8 999 068 81 78</div>
+                    <div class="c__blue">8 999 234 36 49</div>
+                </div>
+                <div class="fc">
+                    <div class="c__gray">email:</div>
+                    <div class="c__blue">dvabro@inbox.ru</div>
+                </div>
+                <div class="fc">
+                    <div class="c__gray">адрес:</div>
+                    <div class="c__blue">СПб Ул. Караваевская 23 оф.12</div>
+                </div>
             </div>
-            <div class="fc">
-                <div class="c__gray">email:</div>
-                <div class="c__blue">dvabro@inbox.ru</div>
-            </div>
-            <div class="fc">
-                <div class="c__gray">адрес:</div>
-                <div class="c__blue">СПб Ул. Караваевская 23 оф.12</div>
+        
+            <div class="cont__r-col">
+                <form action="POST" id="contform">
+                    <div class="formin">
+                        <div class="form__l-col">
+                            <label>
+                                <p>Ваше имя:</p>
+                                <input type="text" placeholder="Например: Иван" required>
+                            </label>
+                            <label>
+                                <p>Ваш номер:</p>
+                                <input id="number" type="text" placeholder="+7(___)-___-__-__" required>
+                            </label>
+                            <label>
+                                <p>Ваш email:</p>
+                                <input type="text" placeholder="example@email.com" required>
+                            </label>
+                        </div>
+                        <div class="form__r-col">
+                            <p>Ваше сообщение:</p>
+                            <textarea placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                    </div>
+                    <div class="frmbtn">
+                        <label>
+                            <div class="btn__popup btn__submit btnfor">ОТПРАВИТЬ<img src="./img/arrow-right.svg" alt=""></div>
+                            <input type="submit" class="btn__popup" href="#">
+                        </label>
+                        <p class="policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-    
-        <div class="cont__r-col">
-            <form action="POST" id="contform">
-                <div class="formin">
-                    <div class="form__l-col">
-                        <label>
-                            <p>Ваше имя:</p>
-                            <input type="text" placeholder="Например: Иван" required>
-                        </label>
-                        <label>
-                            <p>Ваш номер:</p>
-                            <input id="number" type="text" placeholder="+7(___)-___-__-__" required>
-                        </label>
-                        <label>
-                            <p>Ваш email:</p>
-                            <input type="text" placeholder="example@email.com" required>
-                        </label>
-                    </div>
-                    <div class="form__r-col">
-                        <p>Ваше сообщение:</p>
-                        <textarea placeholder="Введите ваше сообщение"></textarea>
-                    </div>
-                </div>
-                <div class="frmbtn">
-                    <label>
-                        <div class="btn__popup btn__submit btnfor">ОТПРАВИТЬ<img src="./img/arrow-right.svg" alt=""></div>
-                        <input type="submit" class="btn__popup" href="#">
-                    </label>
-                    <p class="policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+</div>
 
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1002.5213179694222!2d30.5067675!3d59.8318232!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962f5352fc35db%3A0x633d08c7335bae0b!2z0JrQsNGA0LDQstCw0LXQstGB0LrQsNGPINGD0LsuLCAyMywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MjE3Nw!5e0!3m2!1sru!2sru!4v1571146590376!5m2!1sru!2sru" width="600" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 <!------------Footer------------>
 <footer class="ftr">
-    <section>
+    <section class="container">
         <div class="footer__up">
             <div class="f__up__left">
                 <h2 class="logo--f">Electro2you</h2>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Home</title>
 </head>
@@ -70,7 +71,7 @@
                         </li>
                         <li><a class="navi--a" href="about.html">О Компании</a></li>
                         <li><a class="navi--a" href="project.html">Наши работы</a></li>
-                        <li><a class="navi--a" href="blog.html">Статьи</a></li>
+                        <li><a class="navi--a" href="price.html">Цены</a></li>
                         <li><a class="navi--a" href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
@@ -80,6 +81,7 @@
 
 
 <!------------Mobile Navigation------------>
+<div class="bg__mb__templ"></div>
     <menu class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
         <div class="logo"><h2><a href="#">Electro</a></h2></div>
@@ -89,7 +91,7 @@
           <li><a class="menu__item" href="services.html">Услуги</a></li>
           <li><a class="menu__item" href="about.html">О Компании</a></li>
           <li><a class="menu__item" href="project.html">Наши работы</a></li>
-          <li><a class="menu__item" href="blog.html">Статьи</a></li>
+          <li><a class="menu__item" href="price.html">Цены</a></li>
           <li><a class="menu__item" href="contacts.html">Контакты</a></li>
         </ul>
     </menu>
@@ -97,17 +99,21 @@
 
 
 <!------------Header------------>
-    <header>
-        <div class="blue--bg"></div>
-        <section>
-            <div class="header__left">
-                <h2>Электромонтажные работы под ключ в Санкт-Петербрге</h2>
-                <p>Давно выяснено, что при оценке дизайна и композиции
-                     читаемый текст мешает сосредоточиться.
-                     Lorem Ipsum используют потому, что тот обеспечивает</p>
-                    <a class="btn__str show_popup" rel="popup_open" href="#">ОФОРМИТЬ ЗАКАЗ <img src="./img/arrow-right.svg" alt=""></a>
+    <header class="container">
+        <div class="row">
+            <div class="header__l-col col-xl-8 col-md-8">
+                <h2>Электика “под ключ” В СПб<br>и Ленинградской облости</h2>
+                <ul class="header__ul">
+                    <li>Закупаем материалы со скидкой до 40%.</li>
+                    <li>Закупаем материалы со скидкой до 40%.</li>
+                    <li>Предоставляем схему расположения проводов.</li>
+                </ul>
+                <a class="btn__str show_popup" rel="popup_open" href="#">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ <img src="./img/arrow-right.svg" alt=""></a>
             </div>
-        </section>
+            <div class="header__r-col col-xl-4 col-md-4">
+                <img src="./img/header.png" alt="">
+            </div>
+        </div>
     </header>
 
 
@@ -115,342 +121,369 @@
 <!------------Services------------>
     <section>
         <h2 class="h2__services">Наши услуги.</h2>
-        <div class="template__cards">
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>Монтаж новой электропроводки</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
-            </a>
-            <!--end one-->
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>замена старой электропроводки</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/7ae50e1f3d7e4ee7525ffce9e2777929.png" alt="">
-            </a>
-            <!--end one-->
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>Сборка и подключение электрощита</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/ccc27b8708bd7b7dbab20f810fae5215.png" alt="">
-            </a>
-            <!--end one-->
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>Перенос электрощита</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/262cee08090332743077871cf84d841f.png" alt="">
-            </a>
-            <!--end one-->
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>Монтаж и расключение распаечных коробок</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/10604e3db49600cd4131776fa3d2d8d2.png" alt="">
-            </a>
-            <!--end one-->
-            <!--one-->
-            <a href="services-template.html" class="service__card">
-                <h3>Установка розеток и выключателей</h3>
-                <div class="blue--bg card--bg"></div>
-                <img src="./img/4a67f935da10121faea5dfa09012b04f.png" alt="">
-            </a>
-            <!--end one-->
-        </div>
+        <div class="template__cards row">
+                <!--one-->
+                <a href="services-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template1.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template1.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template1.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="services-template1.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>замена старой электропроводки</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+            </div>
         <a class="btn__str position__btn" href="services.html">ВСЕ УСЛУГИ<img src="./img/arrow-right.svg" alt=""></a>
     </section>
 
 
 
 <!------------Third slide with info------------>    
-    <section class="third-slide">
-        <img class="kaska" src="./img/2fd6e6cdcd562cc9a59415f884cc2761.jpeg" alt="">
-        <div class="info">
-            <h3>Деликатный электромонтаж в вашей квартире: недорого и с гарантией!</h3>
-            <p>Мы - сплоченный коллектив из четырех электромонтажников с большим опытом. 
-                Во главе нашей команды два брата: Максим и Иван. Братья отсчитывают свой опыт 
-                с 12-летнего возраста, когда впервые своими руками произвели электромонтаж на даче. 
-                С тех пор им стало ясно, что в этом заключается их призвание, 
-                а когда человек занимается тем, что он действительно любит, 
-                получается по-настоящему хорошо!
-            </p>
-            <a class="btn__str btn--blue" href="about.html">ЧИТАТЬ ПОЛНОСТЬЮ <img src="./img/arrow-blue.svg" alt=""></a>
+    <section class="container kas">
+        <div class="kaska_img col-xl-6 col-lg-6">
+            <img class="kaska" src="./img/2fd6e6cdcd562cc9a59415f884cc2761.jpeg" alt="">
+        </div>
+        <div class="kaska__r-col col-xl-6 col-lg-6">
+            <h2>Электромонтаж любой сложности от русской бригады</h2>
+            <p>Мы - сплоченный коллектив из четырех электромонтажников с большим опытом. Во главе нашей команды два брата: Максим и Иван. Братья отсчитывают свой опыт с 12-летнего возраста, когда впервые своими руками произвели электромонтаж на даче. С тех пор им стало ясно, что в этом заключается их призвание, а когда человек занимается тем, что он действительно любит, получается по-настоящему хорошо!</p>
         </div>
     </section>
 
-
-
-<!------------Pluses------------>      
-<div class="dark--bg">
-    <section>
-        <h2 class="h2__light">К нам обращаются не просто так</h2>
-        <div class="template__cards">
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/01.svg" alt="">
-                <p class="pluses__number">01</p>
-                <p class="pluses__bottom">гарантируем чистоту и порядок после работ.</p>
-            </div>
-            <!--end one-->
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/02.svg" alt="">
-                <p class="pluses__number">02</p>
-                <p class="pluses__bottom">Исключаем конфликты с соседями.Соблюдаем закон" О тишине"</p>
-            </div>
-            <!--end one-->
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/03.svg" alt="">
-                <p class="pluses__number">03</p>
-                <p class="pluses__bottom">Берем на себя заботы о покупке и доставке материалов.</p>
-            </div>
-            <!--end one-->
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/04.svg" alt="">
-                <p class="pluses__number">04</p>
-                <p class="pluses__bottom">Работаем в выходные и праздничные дни</p>
-            </div>
-            <!--end one-->
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/05.svg" alt="">
-                <p class="pluses__number">05</p>
-                <p class="pluses__bottom">Все сотрудники имеют допуски по электробезопасности</p>
-            </div>
-            <!--end one-->
-            <!--one-->
-            <div class="pluses__card">
-                <img src="./img/06.svg" alt="">
-                <p class="pluses__number">06</p>
-                <p class="pluses__bottom">Внушительный опыт работы</p>
-            </div>
-            <!--end one-->
-        </div>
-    </section>
-</div>
 
 
 
 <!------------Calculator One------------> 
-<section>
-    <div id="calculator1">
-        <div class="calc1__l-col">
-            <div class="l-head">
-                <p class="number__calc num__culc1">01</p>
-                <h2>Рассчитайте стоимость<br>электромонтажа</h2>
-                <p>Выберите тариф:</p>
-                <div class="tabs">
-                    <input type="radio" name="inset" value="" id="tab_1" checked onclick="selectedRadio(0)">
-                    <label for="tab_1"><div class="circle"><div class="circlein"></div></div>Эконом</label>
-                
-                    <input type="radio" name="inset" value="" id="tab_2" onclick="selectedRadio(1)">
-                    <label for="tab_2"><div class="circle"><div class="circlein"></div></div>Стандарт</label>
-                
-                    <input type="radio" name="inset" value="" id="tab_3" onclick="selectedRadio(2)">
-                    <label for="tab_3"><div class="circle"><div class="circlein"></div></div>Премиум</label>
-                
-                    <div id="txt_1" class="tab-content">
-                        <ul>
-                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
-                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
-                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
-                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
-                        </ul>
-                    </div>
-                    <div id="txt_2" class="tab-content">
-                        <ul>
-                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
-                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
-                        </ul>
-                    </div>
-                    <div id="txt_3" class="tab-content">
-                        <ul>
-                            <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
-                            <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="calc1__r-col">
-            <div class="calc1__r-elem">
-                <p class="number__calc">02</p>
-                <p>Тип стен:</p>
-                <div class="select-wrapper">
-                    <select id="select" onclick="calcOneSelect()">
-                        <option value="0">Кирпич</option>
-                        <option value="0">Пеноблок</option>
-                        <option value="1">Бетон</option>
-                    </select>
-                    <img src="./img/arrow-select.svg" alt="" class="select-arrow">
-                </div>
-                <div class="under-select">
-                    <div class="us-l">
-                        <label>
-                            <p>Метраж:</p>
-                            <input type="text" id="input1" placeholder="100м" oninput="calcOneMetr()">
-                        </label>
-                    </div>
-                    <div class="us-r">
-                        <label>
-                            <p>Кол-во розеток:</p>
-                            <input type="text" id="input2" placeholder="100" oninput="calcOneInput()">
-                        </label>
+<section class="container">
+        <div id="calculator1">
+            <div class="calc1__l-col">
+                <div class="l-head">
+                    <p class="number__calc num__culc1">01</p>
+                    <h2>Рассчитайте стоимость<br>электромонтажа</h2>
+                    <p>Выберите тариф:</p>
+                    <div class="tabs">
+                        <input type="radio" name="inset" value="" id="tab_1" checked onclick="selectedRadio(0)">
+                        <label for="tab_1"><div class="circle"><div class="circlein"></div></div>Эконом</label>
+                    
+                        <input type="radio" name="inset" value="" id="tab_2" onclick="selectedRadio(1)">
+                        <label for="tab_2"><div class="circle"><div class="circlein"></div></div>Стандарт</label>
+                    
+                        <input type="radio" name="inset" value="" id="tab_3" onclick="selectedRadio(2)">
+                        <label for="tab_3"><div class="circle"><div class="circlein"></div></div>Премиум</label>
+                    
+                        <div id="txt_1" class="tab-content">
+                            <ul>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            </ul>
+                        </div>
+                        <div id="txt_2" class="tab-content">
+                            <ul>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                            </ul>
+                        </div>
+                        <div id="txt_3" class="tab-content">
+                            <ul>
+                                <li>Розетки одной группы идут "шлейфом", соединяются параллельно в розетке. Без распаячных коробок.</li>
+                                <li>Кабеля розеточных групп монтируются к полу в ПНД гофре.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="calc1__r-elem">
-                <p class="number__calc">03</p>
-                <p>Итоговая стоимость</p>
-                <div class="price__calc">
-                    <p id="calc-final">63 800</p>
-                    <span id="span__calc"> руб</span>
+            <div class="calc1__r-col">
+                <div class="calc1__r-elem">
+                    <p class="number__calc">02</p>
+                    <p>Тип стен:</p>
+                    <div class="select-wrapper">
+                        <select id="select" onclick="calcOneSelect()">
+                            <option value="0">Кирпич</option>
+                            <option value="0">Пеноблок</option>
+                            <option value="1">Бетон</option>
+                        </select>
+                        <img src="./img/arrow-select.svg" alt="" class="select-arrow">
+                    </div>
+                    <div class="under-select">
+                        <div class="us-l">
+                            <label>
+                                <p>Метраж:</p>
+                                <input type="text" id="input1" placeholder="100м" oninput="calcOneMetr()">
+                            </label>
+                        </div>
+                        <div class="us-r">
+                            <label>
+                                <p>Кол-во розеток:</p>
+                                <input type="text" id="input2" placeholder="100" oninput="calcOneInput()">
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <label>
-                    <div class="btn__popup show_popup btn__submit btn__calc">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
-                    <input type="submit" class="btn__popup" href="#">
-                </label>
+                <div class="calc1__r-elem">
+                    <p class="number__calc">03</p>
+                    <p>Итоговая стоимость</p>
+                    <div class="price__calc">
+                        <p id="calc-final">0</p>
+                        <span id="span__calc"> руб</span>
+                    </div>
+                    <label>
+                        <div class="btn__popup show_popup btn__submit btn__calc">ЗАКАЗАТЬ<img src="./img/arrow-right.svg" alt=""></div>
+                        <input type="submit" class="btn__popup" href="#">
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
-
-<!------------Our projects------------> 
-<section class="project">
-    <h2>Наши работы.</h2>
-    <div class="template__cards">
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+<!------------Pluses------------> 
+<div class="container">
+        <h2 class="pluses__h2">К нам обращаются<br>за качественным результатом</h2>
+        <div class="template__cards row">
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/01b.svg" alt="">
+                <p class="pluses__bottom">гарантируем чистоту и порядок после работ.</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+            <!--end one-->
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/02b.svg" alt="">
+                <p class="pluses__bottom">Исключаем конфликты с соседями.Соблюдаем закон" О тишине"</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+            <!--end one-->
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/03b.svg" alt="">
+                <p class="pluses__bottom">Берем на себя заботы о покупке и доставке материалов.</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+            <!--end one-->
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/04b.svg" alt="">
+                <p class="pluses__bottom">Работаем в выходные и праздничные дни</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+            <!--end one-->
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/05b.svg" alt="">
+                <p class="pluses__bottom">Все сотрудники имеют допуски по электробезопасности</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-        <!--one-->
-        <a href="project-template.html" class="project__card">
-            <div class="project__text">
-                <h3>Проспект вернандского</h3>
+            <!--end one-->
+            <!--one-->
+            <div class="pluses__card col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                <img src="./img/06b.svg" alt="">
+                <p class="pluses__bottom">Внушительный опыт работы</p>
             </div>
-            <img src="./img/cadd0390f53951341017bea458293d80.png" alt="">
-        </a>
-        <!--end one-->
-    </div>
-    <a class="btn__str position__btn" href="project.html">ВСЕ РАБОТЫ<img src="./img/arrow-right.svg" alt=""></a>
-</section>
-
-
-
-<!------------Blog------------> 
-<section class="posts">
-    <h2>Полезные статьи.</h2>
-    <div class="template__cards">
-        <!--one-->
-        <div class="post__card">
-            <div class="post__text">
-                <p class="data">02.11.2019</p>
-                <p class="text">Как выбрать материалы для электромонтажа</p>
-                <a class="btn__popup btn--blue post__next" href="blog-template.html">ЧИТАТЬ ПОЛНОСТЬЮ<img src="./img/arrow-right.svg" alt=""></a>
-            </div>
-            <img src="./img/bef49cfca3ded757efee246298dc9a8b.png" alt="">
+            <!--end one-->
         </div>
-        <!--end one-->
-        <!--one-->
-        <div class="post__card">
-            <div class="post__text">
-                <p class="data">02.11.2019</p>
-                <p class="text">Как выбрать материалы для электромонтажа</p>
-                <a class="btn__popup btn--blue post__next" href="blog-template.html">ЧИТАТЬ ПОЛНОСТЬЮ<img src="./img/arrow-right.svg" alt=""></a>
-            </div>
-            <img src="./img/bef49cfca3ded757efee246298dc9a8b.png" alt="">
-        </div>
-        <!--end one-->
-        <!--one-->
-        <div class="post__card hiiderm">
-            <div class="post__text">
-                <p class="data">02.11.2019</p>
-                <p class="text">Как выбрать материалы для электромонтажа</p>
-                <a class="btn__popup btn--blue post__next" href="blog-template.html">ЧИТАТЬ ПОЛНОСТЬЮ<img src="./img/arrow-right.svg" alt=""></a>
-            </div>
-            <img src="./img/bef49cfca3ded757efee246298dc9a8b.png" alt="">
-        </div>
-        <!--end one-->
-    </div>
-    <a class="btn__str post__btn" href="blog.html">ВСЕ СТАТЬИ<img src="./img/arrow-right.svg" alt=""></a>
-</section>
+</div>
+
+
 
 
 <!------------Dark form------------>
-<section class="dark__form__section">
-    <div class="dark-form">
-        <div class="blue--bg"></div>
-        <div class="form-dark__up">
-            <h3>Оставьте заявку прямо сейчас, и наш специалист свяжется с Вами для уточнения деталей</h3>
-            <form action="GET" class="form__dark">
-                <div class="label__form">
-                <label>
-                    <p>Ваше имя:</p>
-                    <input type="text" placeholder="Например: Иван" required>
-                </label>
-                <label>
-                    <p>Ваш номер:</p>
-                    <input id="numbers" type="text" placeholder="+7(___)-___-__-__" required>
-                </label>
-                </div>
-                <label>
-                    <div class="btn__popup btn__submit">ОФОРМИТЬ ЗАКАЗ<img src="./img/arrow-right.svg" alt=""></div>
-                    <input type="submit" class="btn__popup" href="#">
-                </label>
-                <p class="policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
-            </form>
+<div class="dark__form__section">
+        <div class="dark-form dark-form2">
+            <div class="blue--bg"></div>
+            <div class="fdup">
+                <h3>Ответьте на 5 простых вопросов<br>и получите скидку до 30%</h3>
+                <a class="btn__str frmpos" href="#">ПОЛУЧИТЬ РАСЧЕТ СТОИМОСТИ<img src="./img/arrow-right.svg" alt=""></a>
+            </div>
         </div>
+    </div> 
+
+
+<!------------Our projects------------> 
+<div class="container project">
+    <h2>Наши работы.</h2>
+    <div class="template__cards row">
+            <!--one-->
+            <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+                <!--one-->
+                <a href="project-template.html" class="service__card col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                    <div class="in_card">
+                        <h3>Проспект Вернадского</h3>
+                        <div class="blue--bg card--bg"></div>
+                        <img src="./img/d5e8562d07f3e3925752ace225124aef.png" alt="">
+                    </div>
+                </a>
+                <!--end one-->
+        </div>
+    <a class="btn__str position__btn" href="project.html">ВСЕ РАБОТЫ<img src="./img/arrow-right.svg" alt=""></a>
+</div>
+
+<!------------Dark form------------>
+<div class="container dark__form__section">
+        <div class="dark-form">
+            <div class="blue--bg"></div>
+            <div class="form-dark__up">
+                <h3>Оставьте заявку прямо сейчас, и наш специалист свяжется с Вами для уточнения деталей</h3>
+                <form action="GET" class="form__dark">
+                    <div class="label__form">
+                    <label>
+                        <p>Ваше имя:</p>
+                        <input type="text" placeholder="Например: Иван" required>
+                    </label>
+                    <label>
+                        <p>Ваш номер:</p>
+                        <input id="numbers" type="text" placeholder="+7(___)-___-__-__" required>
+                    </label>
+                    </div>
+                    <label>
+                        <div class="btn__popup btn__submit">ОФОРМИТЬ ЗАКАЗ<img src="./img/arrow-right.svg" alt=""></div>
+                        <input type="submit" class="btn__popup" href="#">
+                    </label>
+                    <p class="policy">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+<!------------About------------>
+<section class="container">
+    <label for="fb-about"><p class="fp">Подробнее <img class="podr" src="./img/arr.svg" alt=""></p></label>
+    <input type="checkbox" id="fb-about">
+    <div class="f-about"><div class="fa-gr"></div>
+            Мы - сплоченный коллектив из четырех электромонтажников с большим опытом. Во главе нашей команды два брата: Максим и Иван. Братья отсчитывают свой опыт с 12-летнего возраста, когда впервые своими руками произвели электромонтаж на даче. С тех пор им стало ясно, что в этом заключается их призвание, а когда человек занимается тем, что он действительно любит, получается по-настоящему хорошо!<br><br> 
+            В нашей бригаде работают только славяне со всеми необходимыми допусками и соответствующей квалификацией. Обращаясь к нам, вы точно знаете, что никаких сюрпризов не будет: сделаем все быстро, качественно и недорого. Стоимость наших работ на порядок ниже, чем в среднем по городу, так как сейчас мы занимаемся наработкой клиентской базы. Что это значит для вас? Вы получаете высококачественный электромонтаж по привлекательной цене, при этом качество гарантированно, ведь мы кровно заинтересованы в том, чтобы вам все понравилось!
     </div>
-</section> 
+</section>
+        
 
 
 
 <!------------Footer------------>
 <footer>
-    <section>
+    <section class="container">
         <div class="footer__up">
             <div class="f__up__left">
                 <h2 class="logo--f">Electro2you</h2>
@@ -506,7 +539,6 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
