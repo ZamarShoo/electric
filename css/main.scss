@@ -364,24 +364,6 @@ input[type="radio"] {
     margin-right: -36px;
 } 
 
-.btn__submit img {
-    margin-right: 51px;
-}
-
-.btn__submit:hover > img {
-    margin-right: 41px;
-}
-
-.btn__calc img,
-.btn__calc2 img {
-    margin-right: 105px;
-}
-
-.btn__calc:hover > img,
-.btn__calc2:hover > img{
-    margin-right: 95px;
-}
-
 .btn--blue img{
     margin-top: 5px;
     margin-right: -20px;
@@ -791,16 +773,8 @@ input[type="radio"] {
         padding: 10px 15px;
     }
 
-    .btn__calc img {
-        margin-right: 210px;
-    }
-
     .btn__calc {
         padding: 1em 14em;
-    }
-
-    .btn__calc:hover > img {
-        margin-right: 200px;
     }
 
     .post__next img {
@@ -853,7 +827,6 @@ input[type="radio"] {
 
     .btn__popup img, .btn__str img {
         margin-top: 16px;
-        margin-right: 25px;
     }
 
     header {

@@ -470,15 +470,14 @@ span {
 
 .btn__popup img, .btn__str img {
   position: absolute;
-  margin-top: 20px;
-  margin-right: 31px;
+  margin-top: 21px;
+  margin-left: 5px;
   transition: .3s ease;
-  right: 0;
   top: 0;
 }
 
 .btn__popup:hover > img {
-  margin-right: 21px;
+  margin-left: 15px;
 }
 
 .btn__str:hover > img {
@@ -827,11 +826,6 @@ input[type="submit"] {
   color: #FFFFFF;
   font-family: 'Proxima Nova Semibold';
   cursor: pointer;
-}
-
-.btn__submit img {
-  margin-top: 21px;
-  margin-right: 65px;
 }
 
 .form__dark {
