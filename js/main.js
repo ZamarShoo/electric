@@ -47,7 +47,6 @@ $(window).scroll(function(){
   });
 
 
-
 //calcOne
 const socket = [
         [550, 680, 630, 790, 750, 930],
@@ -65,22 +64,28 @@ function outputCalcOne() {
   var rub = document.getElementById("span__calc");
 
   let finish = (metrType * calcType);
-  if (finish == 0) {
-    price.innerHTML = "Договорная";
-    rub.style.display="none";
-    if (window.screen.availWidth >= 824) {
-      price.style.fontSize="40px";
-    } else {
-      price.style.fontSize="30px";
-    }
+  if ((calcType == 1) || (metrType == 1) || (finish == 0)) {
+    price.innerHTML = 0;
   } else {
-    price.innerHTML = finish;
-    rub.style.display="block";
-    if (window.screen.availWidth >= 824) {
-      price.style.fontSize="60px";
+
+    if (calcType == -5) {
+      price.innerHTML = "Договорная";
+      rub.style.display="none";
+      if (window.screen.availWidth >= 824) {
+        price.style.fontSize="40px";
+      } else {
+        price.style.fontSize="30px";
+      }
     } else {
-      price.style.fontSize="40px";
+      price.innerHTML = finish;
+      rub.style.display="block";
+      if (window.screen.availWidth >= 824) {
+        price.style.fontSize="60px";
+      } else {
+        price.style.fontSize="40px";
+      }
     }
+
   }
 }
 
@@ -101,7 +106,7 @@ function calcOneInput() {
     calcType = socket[radioType][(selectType + 4)]
   } else
   if (160 <= valueOfInput) {
-    calcType = 0
+    calcType = -5
   }
   outputCalcOne();
 }

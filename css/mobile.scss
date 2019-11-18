@@ -67,6 +67,11 @@
 
 @media screen and (max-width: 980px) {
 
+    .kaska {
+        margin-left: 08px;
+        width: 100%;
+    }
+
     .bg__mb__templ {
         display: block;
     }
@@ -134,7 +139,7 @@
         left: 0;
         z-index: 10;
         margin-top: -5px;
-        margin-left: 24px;
+        margin-left: 15px;
 
         h2 {
             margin-top: 0;
@@ -220,19 +225,27 @@
   }
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
+    background-color: white;
   }
   #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
+    background-color: white;
   }
   #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
+    background-color: white;
   }
   #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     right: 0;
   }
+
+  #menu__toggle:checked + .logo h2 a{
+    color: white;
+  }
+
   .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -241,6 +254,19 @@
   transition-duration: 0.7s;
 }.menu__item {
   transition-duration: 0.7s;
+}
+
+.menu-index {
+    position: relative;
+
+    .logo h2 a {
+        color: #001535
+    }
+
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+        
+        background-color: #001535;
+    }
 }
 }
 
