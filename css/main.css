@@ -1297,6 +1297,14 @@ footer {
   .mobile-backcolor .logo {
     margin-top: -5px;
   }
+  .mobile-backcolor .menu-index .logo h2 a {
+    color: white;
+  }
+  .mobile-backcolor .menu-index .menu__btn > span,
+  .mobile-backcolor .menu-index .menu__btn > span::before,
+  .mobile-backcolor .menu-index .menu__btn > span::after {
+    background-color: white;
+  }
   #menu__toggle {
     opacity: 0;
   }

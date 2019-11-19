@@ -166,6 +166,18 @@
     .logo {
         margin-top: -5px;
     }
+
+    .menu-index {
+        .logo h2 a {
+            color: white;
+        }
+
+        .menu__btn > span,
+        .menu__btn > span::before,
+        .menu__btn > span::after {
+            background-color: white;
+        }
+    }
 }
 
 #menu__toggle {
