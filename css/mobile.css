@@ -2,8 +2,8 @@
   nav section {
     width: 1138px;
   }
-  .fixed nav section {
-    width: 1138px;
+  .fixed .ffix {
+    width: 1109px;
   }
 }
 
@@ -14,6 +14,10 @@
   }
   nav section {
     width: 100%;
+  }
+  .fixed .ffix {
+    width: 100%;
+    padding: 0 25px;
   }
 }
 

@@ -18,11 +18,12 @@ $('.show_popup').click(function() {
   });
 
 //Header Scroll for desktop
+var $navBar = $('.menu');
 $(window).scroll(function(){
     if ($(this).scrollTop() > 300) {
-        $('nav').addClass('fixed');
+      $navBar.addClass('fixed');
     } else {
-        $('nav').removeClass('fixed');
+      $navBar.removeClass('fixed');
     }
   });
 

@@ -215,17 +215,17 @@ nav section {
   margin-top: -10px;
 }
 
-.menu {
+.menu .ffix {
   display: flex;
 }
 
-.menu ul {
+.menu .ffix ul {
   margin-right: 0px;
   margin-left: auto;
   display: flex;
 }
 
-.menu ul .navi--a {
+.menu .ffix ul .navi--a {
   color: #001535;
   opacity: .8;
   position: relative;
@@ -233,20 +233,20 @@ nav section {
   transition: 0.2s ease;
 }
 
-.menu ul .navi--a:hover {
+.menu .ffix ul .navi--a:hover {
   opacity: 1;
 }
 
-.menu ul li:last-child {
+.menu .ffix ul li:last-child {
   margin-right: 0;
 }
 
-.menu ul li:first-child {
+.menu .ffix ul li:first-child {
   position: relative;
   margin-right: 20px;
 }
 
-.menu img {
+.menu .ffix img {
   position: absolute;
   margin-left: 10px;
   margin-top: 10px;
@@ -536,44 +536,35 @@ span {
   background: #001F44;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   padding: 0;
+  top: 0;
+  left: 0;
 }
 
-.fixed .menu ul .navi--a {
+.fixed .ffix {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.fixed .ffix ul {
+  margin-top: 16px;
+}
+
+.fixed .ffix ul .navi--a {
   color: white;
 }
 
-.fixed .menu ul .navi--a img {
+.fixed .ffix ul .navi--a img {
   color: white;
 }
 
-.fixed .navigation__up {
-  height: 1px;
-  opacity: 0;
-  display: none;
-}
-
-.fixed .logo h2 {
-  margin-top: -7px;
-  color: white;
-}
-
-.fixed hr {
-  margin: 0;
-  display: none;
-}
-
-.fixed .menu {
-  margin-top: 12px;
-}
-
-.fixed .menu ul {
-  margin-top: 5px;
+.fixed .ffix .logo h2 {
+  margin-top: 3px;
   color: white;
 }
 
 .blue--bg {
   background-color: #070f27;
-  opacity: .8;
+  opacity: .7;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -591,18 +582,15 @@ span {
 
 .btn__popup img, .btn__str img {
   position: absolute;
-  margin-top: 21px;
+  margin-top: 20px;
   margin-left: 5px;
   transition: .3s ease;
   top: 0;
 }
 
-.btn__popup:hover > img {
-  margin-left: 15px;
-}
-
+.btn__popup:hover > img,
 .btn__str:hover > img {
-  margin-right: 21px;
+  margin-left: 15px;
 }
 
 .template__cards {
@@ -629,7 +617,7 @@ span {
 }
 
 .service__card .in_card img {
-  height: 100%;
+  width: 200%;
   transition: 1s ease;
 }
 
@@ -1170,8 +1158,8 @@ footer {
   nav section {
     width: 1138px;
   }
-  .fixed nav section {
-    width: 1138px;
+  .fixed .ffix {
+    width: 1109px;
   }
 }
 
@@ -1182,6 +1170,10 @@ footer {
   }
   nav section {
     width: 100%;
+  }
+  .fixed .ffix {
+    width: 100%;
+    padding: 0 25px;
   }
 }
 
@@ -2117,7 +2109,7 @@ textarea:hover {
   color: white;
 }
 
-.menu ul .white__text {
+.menu .ffix ul .white__text {
   color: white;
 }
 

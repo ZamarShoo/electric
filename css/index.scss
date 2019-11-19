@@ -93,7 +93,7 @@ nav {
     margin-top: -10px;
 }
 
-.menu {
+.menu .ffix {
     display: flex;
 
     ul {
@@ -410,57 +410,48 @@ span {
       transform: rotate(180deg);
   }
 
-  .fixed {
-      position: fixed;
-      margin: 0;
-      z-index: 15;
-      height: 58px;
-      width: 100vw;
-      background: #001F44;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-      padding: 0;
+.fixed {
+    position: fixed;
+    margin: 0;
+    z-index: 15;
+    height: 58px;
+    width: 100vw;
+    background: #001F44;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    top: 0;
+    left: 0;
 
-      .menu ul .navi--a {
-        color: white;
+    .ffix {
+        width: 1170px;
+        margin: 0 auto;
+    }
 
-        img {
+    .ffix ul {
+        margin-top: 16px;
+        .navi--a {
             color: white;
+            
+    
+            img {
+                color: white;
+            }
         }
-      }
+    }
 
-      .navigation__up {
-          height: 1px;
-          opacity: 0;
-          display: none;
-      }
+    .ffix .logo h2 {
+        margin-top: 3px;
+        color: white;
+    }
 
-      .logo h2 {
-          margin-top: -7px;
-          color: white;
-      }
-
-      hr {
-          margin: 0;
-          display: none;
-      }
-
-      .menu {
-          margin-top: 12px;
-
-          ul {
-              margin-top: 5px;
-              color: white;
-          }
-      }
-
-  }
+}
 
 //---------------------------------------------Header
 
 
 .blue--bg {
     background-color: rgb(7, 15, 39);
-    opacity: .8;
+    opacity: .7;
     width: 100%;
     height: 100%;
     z-index: 2;
@@ -477,7 +468,7 @@ span {
 
     img {
         position: absolute;
-        margin-top: 21px;
+        margin-top: 20px;
         margin-left: 5px;
         transition: .3s ease;
         top: 0;
@@ -485,14 +476,10 @@ span {
 
 }
 
-.btn__popup:hover > img {
+.btn__popup:hover > img,
+.btn__str:hover > img {
     margin-left: 15px;
 }
-
-.btn__str:hover > img {
-    margin-right: 21px;
-}
-
 //---------------------------------------------Service
 
 
@@ -519,7 +506,7 @@ span {
     }
 
     .in_card img {
-        height: 100%;
+        width: 200%;
         transition: 1s ease;
     }
 
