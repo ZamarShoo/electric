@@ -5,10 +5,6 @@ nav {
     height: 110px;
     z-index: 20;
     top: 0;
-
-    section {
-        width: 1310px;
-    }
 }
 
 .header__l-col {
@@ -46,9 +42,11 @@ nav {
 
 .navigation__tel {
     margin-top: 14px;
+    align-items: center;
     display: flex;
-    margin-right: 40px;
-    margin-left: auto;
+    margin-right: 220px;
+    position: absolute;
+    right: 0;
 
     a {
         font-size: 14px;
@@ -461,18 +459,22 @@ span {
     font-size: 15px;
     letter-spacing: 0.06em;
     display: inline-block;
-    padding: 1em 3.5em 1em 2em;
+    padding: 1.4em 4em 1.4em 3em;
     background-color: #005CCA;
     position: relative;
 
     img {
         position: absolute;
-        margin-top: 20px;
+        margin-top: 25px;
         margin-left: 5px;
         transition: .3s ease;
         top: 0;
     }
 
+}
+
+.btn__submit img {
+    margin-top: 21px;
 }
 
 .btn__popup:hover > img,
@@ -485,7 +487,6 @@ span {
 .template__cards {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 0px;
 }
 
 .h2__services {
@@ -601,6 +602,7 @@ span {
 
     img {
         opacity: .8;
+        width: 80px;
     }
 
     p {
@@ -610,7 +612,7 @@ span {
         text-transform: uppercase;
         color: #001535;
         font-family: 'Proxima Nova Semibold';
-        width: 257px;
+        width: 240px;
         opacity: .8;
     }
 }
@@ -624,13 +626,13 @@ span {
 }
 
 .pluses__bottom {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 //---------------------------------------------Project
 
 .project h2 {
-    margin: 140px 0 50px;
+    margin: 40px 0 50px;
 }
 
 .project__card {

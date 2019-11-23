@@ -12,7 +12,7 @@ body, * {
 }
 
 section {
-  width: 1110px;
+  width: 1140px;
   position: relative;
   margin: 0 auto;
   z-index: 5;
@@ -94,6 +94,10 @@ h2 {
   font-size: 50px;
   line-height: 130%;
   color: #001535;
+}
+
+.h2ProximaNovaEB {
+  font-family: 'Proxima Nova Extra Bold';
 }
 
 h3 {
