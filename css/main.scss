@@ -15,7 +15,7 @@
 }
 
 .table-body {
-    margin: 0 50px 10px;
+    margin: 0 50px;
 }
 
 .table-head{
@@ -70,6 +70,10 @@
     padding: 18px 0;
     display: flex;
     border-bottom: 1px solid #AEAEAE;
+}
+
+.table-elem:last-child {
+    border-bottom: 0px solid white;
 }
 
 .navigation__up .white__text {
@@ -652,6 +656,12 @@ input[type="radio"] {
     }
     .header__r-col {
         margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1530px) {
+    .header__r-col img {
+        width: 762px;
     }
 }
 
