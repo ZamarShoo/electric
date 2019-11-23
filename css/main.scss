@@ -115,6 +115,10 @@ header {
     box-shadow: -30px 30px #005CCA;
 }
 
+.arrow-light {
+    display: none;
+}
+
 .header__ul {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -190,6 +194,11 @@ header {
     opacity: 0.6;
     height: 130px;
     overflow: hidden;
+    font-family: 'Proxima Nova Regular';
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+    opacity: 0.6;
 }
 
 .fp {
@@ -684,6 +693,13 @@ input[type="radio"] {
     }
 }
 
+@media screen and (max-width: 1230px) {
+
+    h2 br {
+            display: none;
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -709,9 +725,6 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 680px) {
-    header {
-        margin-top: 20px;
-    }
     .post__card {
         position: relative;
         width: 250px;
@@ -845,15 +858,15 @@ input[type="radio"] {
     }
 
     .btn__popup img, .btn__str img {
-        margin-top: 16px;
-    }
-
-    header {
-        margin-top: 0px;
+        margin-top: 21px;
     }
 
     .bg__mb__templ {
         margin-bottom: 0px;
+    }
+
+    footer {
+        margin-top: 70px;
     }
 
     h2 {
@@ -885,6 +898,10 @@ input[type="radio"] {
 
     #text h2 {
         margin-top: 20px;
+    }
+
+    .btn__submit img {
+        margin-top: 17px;
     }
 }
 
@@ -925,6 +942,10 @@ input[type="radio"] {
         width: 100%;
     }
 
+    .service__card h3 {
+        width: 160px;
+    }
+
     textarea {
         width: 100%;
         outline: 0;
@@ -933,7 +954,8 @@ input[type="radio"] {
     .btnfor {
         width: 100%;
         padding: 1em 6em;
-        display: flex;
+        display: block;
+        text-align: center;
     }
     #contform .policy {
         margin-left: auto;
@@ -961,7 +983,7 @@ input[type="radio"] {
     }
 
     .pluses__h2 {
-        margin: 30px 0 50px;
+        margin: 30px 0 0px;
     }
 
 }
@@ -972,7 +994,13 @@ input[type="radio"] {
     }
 }
 
+.rows {
+    margin-right: 0px;
+}
 
+.item-gallery img {
+        width: 100%;
+    }
 
 @media screen and (max-width: 375px) {
     .project__card,
@@ -985,6 +1013,10 @@ input[type="radio"] {
 
     .l__project {
         height: 230px;
+    }
+
+    #calculator1 h2 {
+        margin-left: -19px;
     }
 }
 
@@ -1009,6 +1041,20 @@ input[type="radio"] {
     .l__project {
         height: 200px;
     }
+
+    .btn__popup, .btn__str {
+        padding: 1.4em 3em 1.4em 2em;
+        display: block;
+        text-align: center;
+    }
+
+    .frmpos img {
+        margin-top: 20px;
+    }
+
+    .btn__submit img {
+        margin-top: 22px;
+    }
 }
 
 @media screen and (max-height: 650px) {
@@ -1029,5 +1075,5 @@ input[type="radio"] {
     .service__card {
         height: 250px;
     }
-   
+
 }

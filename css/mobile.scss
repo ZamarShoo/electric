@@ -32,9 +32,6 @@
     .navigation__up ul li {
         margin-right: 30px;
     }
-    .navigation__tel {
-        margin-right: 0px;
-    }
 }
 
 @media screen and (max-width: 1050px) {
@@ -579,11 +576,6 @@
         margin-bottom: 40px;
         margin-left: -148px;
         font-size: 13px;
-
-        img {
-            margin-top: 16px;
-            margin-right: 25px;
-        }
     }
 
     .fdup h3 {
@@ -600,11 +592,6 @@
             margin-bottom: 40px;
             margin-left: -148px;
             font-size: 13px;
-    
-            img {
-                margin-top: 16px;
-                margin-right: 25px;
-            }
         }
     }
 }

@@ -25,6 +25,10 @@ hr {
   background: #dcdcdc;
 }
 
+.opas {
+  opacity: 0.3;
+}
+
 ul {
   margin-left: 0;
   padding-left: 0;
@@ -132,7 +136,7 @@ nav {
 }
 
 .header__l-col {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .hamburger-menu {
@@ -386,6 +390,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .calc__n2--head .head h3:last-child {
@@ -398,10 +403,10 @@ nav {
 
 .calc__n2--body .body__calc--elem {
   margin-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #AEAEAE;
   display: flex;
   justify-content: space-between;
+  height: 64px;
 }
 
 .calc__n2--body .body__calc--elem input[type="text"] {
@@ -463,7 +468,8 @@ span {
   padding: 1em 4.5em;
   bottom: 0;
   display: block;
-  margin-top: 75px;
+  margin-top: 92px;
+  text-align: center;
 }
 
 .price__calc {
@@ -553,8 +559,14 @@ span {
   color: white;
 }
 
-.fixed .ffix ul .navi--a img {
-  color: white;
+.fixed .ffix ul .navi--a .arrow-dark {
+  display: none;
+}
+
+.fixed .ffix ul .navi--a .arrow-light {
+  display: block;
+  top: 0;
+  right: 0;
 }
 
 .fixed .ffix .logo h2 {
@@ -841,7 +853,7 @@ span {
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   background-image: url("../img/d6a1f3789ead9c446e2b882dd71a9c3a.jpeg");
   background-size: cover;
 }
@@ -915,6 +927,7 @@ label > input {
   padding-left: 20px;
   outline: none;
   border-radius: 0px;
+  font-family: 'Proxima Nova Semibold';
 }
 
 label > input:hover,
@@ -1184,9 +1197,6 @@ footer {
 @media screen and (max-width: 1118px) {
   .navigation__up ul li {
     margin-right: 30px;
-  }
-  .navigation__tel {
-    margin-right: 0px;
   }
 }
 
@@ -1648,10 +1658,6 @@ footer {
     margin-left: -148px;
     font-size: 13px;
   }
-  .frmpos img {
-    margin-top: 16px;
-    margin-right: 25px;
-  }
   .fdup h3 {
     font-size: 20px;
     margin-top: 30px;
@@ -1665,10 +1671,6 @@ footer {
     margin-bottom: 40px;
     margin-left: -148px;
     font-size: 13px;
-  }
-  .fdup .frmpos img {
-    margin-top: 16px;
-    margin-right: 25px;
   }
 }
 
@@ -2008,7 +2010,7 @@ textarea:hover {
 
 .pluses__h2 {
   font-size: 40px;
-  margin: 140px 0 50px;
+  margin: 140px 0 0;
 }
 
 .sert img {
@@ -2156,6 +2158,10 @@ header {
   box-shadow: -30px 30px #005CCA;
 }
 
+.arrow-light {
+  display: none;
+}
+
 .header__ul {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -2232,6 +2238,11 @@ header {
   opacity: 0.6;
   height: 130px;
   overflow: hidden;
+  font-family: 'Proxima Nova Regular';
+  font-size: 16px;
+  line-height: 150%;
+  color: #333333;
+  opacity: 0.6;
 }
 
 .fp {
@@ -2717,6 +2728,12 @@ input[type="radio"] {
   }
 }
 
+@media screen and (max-width: 1230px) {
+  h2 br {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .calc1__r-elem {
     height: 222px;
@@ -2739,9 +2756,6 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 680px) {
-  header {
-    margin-top: 20px;
-  }
   .post__card {
     position: relative;
     width: 250px;
@@ -2863,13 +2877,13 @@ input[type="radio"] {
     font-size: 13px;
   }
   .btn__popup img, .btn__str img {
-    margin-top: 16px;
-  }
-  header {
-    margin-top: 0px;
+    margin-top: 21px;
   }
   .bg__mb__templ {
     margin-bottom: 0px;
+  }
+  footer {
+    margin-top: 70px;
   }
   h2 {
     font-size: 24px;
@@ -2895,6 +2909,9 @@ input[type="radio"] {
   }
   #text h2 {
     margin-top: 20px;
+  }
+  .btn__submit img {
+    margin-top: 17px;
   }
 }
 
@@ -2928,6 +2945,9 @@ input[type="radio"] {
   #contform input[type="text"] {
     width: 100%;
   }
+  .service__card h3 {
+    width: 160px;
+  }
   textarea {
     width: 100%;
     outline: 0;
@@ -2935,7 +2955,8 @@ input[type="radio"] {
   .btnfor {
     width: 100%;
     padding: 1em 6em;
-    display: flex;
+    display: block;
+    text-align: center;
   }
   #contform .policy {
     margin-left: auto;
@@ -2958,7 +2979,7 @@ input[type="radio"] {
     font-size: 16px;
   }
   .pluses__h2 {
-    margin: 30px 0 50px;
+    margin: 30px 0 0px;
   }
 }
 
@@ -2966,6 +2987,14 @@ input[type="radio"] {
   .btn__calc {
     padding: 1em 7em;
   }
+}
+
+.rows {
+  margin-right: 0px;
+}
+
+.item-gallery img {
+  width: 100%;
 }
 
 @media screen and (max-width: 375px) {
@@ -2978,6 +3007,9 @@ input[type="radio"] {
   }
   .l__project {
     height: 230px;
+  }
+  #calculator1 h2 {
+    margin-left: -19px;
   }
 }
 
@@ -2997,6 +3029,17 @@ input[type="radio"] {
   }
   .l__project {
     height: 200px;
+  }
+  .btn__popup, .btn__str {
+    padding: 1.4em 3em 1.4em 2em;
+    display: block;
+    text-align: center;
+  }
+  .frmpos img {
+    margin-top: 20px;
+  }
+  .btn__submit img {
+    margin-top: 22px;
   }
 }
 

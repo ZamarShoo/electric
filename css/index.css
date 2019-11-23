@@ -8,7 +8,7 @@ nav {
 }
 
 .header__l-col {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .hamburger-menu {
@@ -262,6 +262,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .calc__n2--head .head h3:last-child {
@@ -274,10 +275,10 @@ nav {
 
 .calc__n2--body .body__calc--elem {
   margin-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #AEAEAE;
   display: flex;
   justify-content: space-between;
+  height: 64px;
 }
 
 .calc__n2--body .body__calc--elem input[type="text"] {
@@ -339,7 +340,8 @@ span {
   padding: 1em 4.5em;
   bottom: 0;
   display: block;
-  margin-top: 75px;
+  margin-top: 92px;
+  text-align: center;
 }
 
 .price__calc {
@@ -429,8 +431,14 @@ span {
   color: white;
 }
 
-.fixed .ffix ul .navi--a img {
-  color: white;
+.fixed .ffix ul .navi--a .arrow-dark {
+  display: none;
+}
+
+.fixed .ffix ul .navi--a .arrow-light {
+  display: block;
+  top: 0;
+  right: 0;
 }
 
 .fixed .ffix .logo h2 {
@@ -717,7 +725,7 @@ span {
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   background-image: url("../img/d6a1f3789ead9c446e2b882dd71a9c3a.jpeg");
   background-size: cover;
 }
@@ -791,6 +799,7 @@ label > input {
   padding-left: 20px;
   outline: none;
   border-radius: 0px;
+  font-family: 'Proxima Nova Semibold';
 }
 
 label > input:hover,

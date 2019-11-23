@@ -25,9 +25,6 @@
   .navigation__up ul li {
     margin-right: 30px;
   }
-  .navigation__tel {
-    margin-right: 0px;
-  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -488,10 +485,6 @@
     margin-left: -148px;
     font-size: 13px;
   }
-  .frmpos img {
-    margin-top: 16px;
-    margin-right: 25px;
-  }
   .fdup h3 {
     font-size: 20px;
     margin-top: 30px;
@@ -505,9 +498,5 @@
     margin-bottom: 40px;
     margin-left: -148px;
     font-size: 13px;
-  }
-  .fdup .frmpos img {
-    margin-top: 16px;
-    margin-right: 25px;
   }
 }
